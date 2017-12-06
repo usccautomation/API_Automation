@@ -1,0 +1,75 @@
+Status: OK
+Time Taken: 4488
+Size: 1365
+Timestamp: Fri Nov 10 14:48:56 CST 2017
+TestStep: SubmitOrder
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit62.uscc.com/enterprise/orders/ordermanagement/v1_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit62.uscc.com
+Content-Length : 753
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/orders/ordermanagement/v1_0#OrderManagement_v1_0_Binding.submitOrder"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/messages">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:transactionId>5</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:submitOrder_Request>
+         <mes:orderId>593669426A</mes:orderId>
+      </mes:submitOrder_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 2267645347
+Date : Fri, 10 Nov 2017 20:48:57 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : OK OK
+#status# : HTTP/1.1 200 OK
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <typ:MessageHeader xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types">
+         <typ:activityStatus>SUCCESS</typ:activityStatus>
+         <typ:activityName>OrderManagement</typ:activityName>
+         <typ:msgName>submitOrder</typ:msgName>
+         <typ:msgType>RESPONSE</typ:msgType>
+         <typ:msgID>1842149517688886226-b365cea.15fa19954e4.-7c4b-805bbd54-96e5-4432-a080-043d89677638</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:requestTimestamp>2017-11-10T14:48:57.662-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-10T14:49:01.143-06:00</typ:responseTimestamp>
+         <typ:transactionId>5</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <mes:submitOrder_Response xmlns:mes="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/messages">
+         <mes:responseTransactionID>1842149517688886226-b365cea.15fa19954e4.-7c4b-805bbd54-96e5-4432-a080-043d89677638</mes:responseTransactionID>
+      </mes:submitOrder_Response>
+   </S:Body>
+</soapenv:Envelope>

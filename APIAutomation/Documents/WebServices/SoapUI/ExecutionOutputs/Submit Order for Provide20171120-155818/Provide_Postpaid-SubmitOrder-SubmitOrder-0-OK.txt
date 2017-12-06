@@ -1,0 +1,87 @@
+Status: OK
+Time Taken: 3191
+Size: 2549
+Timestamp: Mon Nov 20 15:58:40 CST 2017
+TestStep: SubmitOrder
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit9.uscc.com/enterprise/orders/ordermanagement/v1_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit9.uscc.com
+Content-Length : 743
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/orders/ordermanagement/v1_0#OrderManagement_v1_0_Binding.submitOrder"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/messages">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:transactionId>5</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:submitOrder_Request>
+         <mes:orderId/>
+      </mes:submitOrder_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 2312208401
+Date : Mon, 20 Nov 2017 21:58:42 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : FAIL FAIL
+#status# : HTTP/1.1 500 Internal Server Error
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <typ:MessageHeader xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types">
+         <typ:activityStatus>FAILED</typ:activityStatus>
+         <typ:activityName>OrderManagement</typ:activityName>
+         <typ:msgName>submitOrder</typ:msgName>
+         <typ:msgType>ERROR</typ:msgType>
+         <typ:msgID>4681157062810306504--6b3f8c8e.15fa1d93b62.-7f65-b9d85424-28ef-4280-8a1a-5368146adcd8</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:requestTimestamp>2017-11-20T15:58:43.175-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-20T15:58:43.425-06:00</typ:responseTimestamp>
+         <typ:transactionId>5</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <S:Fault>
+         <faultcode xmlns:private="http://schemas.xmlsoap.org/soap/envelope/">private:Server.generalException</faultcode>
+         <faultstring>USC0000015 Invalid Data.</faultstring>
+         <detail>
+            <typ:OrderManagementException xmlns:typ="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/types">
+               <typ1:errorInformation xmlns:typ1="http://services.uscellular.com/schema/enterprise/common/v2_0/types">
+                  <typ1:errorCode>USC0000015</typ1:errorCode>
+                  <typ1:errorDescription>Invalid Data.</typ1:errorDescription>
+               </typ1:errorInformation>
+               <!--The following information may help pinpoint the error that lead to this fault.-->
+               <!--This has the msgID, the system that ESB was trying to call, and error detail XML.-->
+               <typ1:faultDetails xsi:type="private:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:typ1="http://services.uscellular.com/schema/enterprise/common/v2_0/types" xmlns:private="http://www.w3.org/2001/XMLSchema"><![CDATA[msgID=4681157062810306504--6b3f8c8e.15fa1d93b62.-7f65-b9d85424-28ef-4280-8a1a-5368146adcd8 systemName=MCSS errorData=<responseInfo xmlns:ns2="http://implWSInterface.ejb.ws.impl.css.amdocs.com" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><code>2001200009</code><description>The following mandatory field is missing: Order id</description><messageId>b9d85424-28ef-4280-8a1a-5368146adcd8_90001_54858079</messageId></responseInfo>]]></typ1:faultDetails>
+            </typ:OrderManagementException>
+         </detail>
+      </S:Fault>
+   </S:Body>
+</soapenv:Envelope>

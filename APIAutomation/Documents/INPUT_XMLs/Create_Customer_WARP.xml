@@ -1,0 +1,3103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="9e66b2bc-6703-4d9a-ae98-06ce4493f786" activeEnvironment="Default" name="Retail_MGMT" resourceRoot="" soapui-version="5.3.0" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:WsdlInterface" id="57597d67-cd58-4ebf-9aa5-f3c5db0ba773" wsaVersion="NONE" name="RetailerManagement_v1_0_Binding" type="wsdl" bindingName="{http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0}RetailerManagement_v1_0_Binding" soapVersion="1_1" anonymous="optional" definition="https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0?WSDL" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:definitionCache type="TEXT" rootPart="https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0?WSDL"><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0?WSDL</con:url><con:content><![CDATA[<wsdl:definitions targetNamespace="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:soap11="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsp="http://www.w3.org/ns/ws-policy" xmlns:wsp200409="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsp200607="http://www.w3.org/2006/07/ws-policy" xmlns:ns0="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0">
+  <wsdl:types xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+    <xsd:schema>
+      <xsd:import schemaLocation="v1_0.xsd3.xsd" namespace="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+      <xsd:import schemaLocation="v1_0.xsd4.xsd" namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+      <xsd:import schemaLocation="v1_0.xsd2.xsd" namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types"/>
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="RetailerManagement_v1_0_addAttachmentToContact_RequestMsg">
+    <wsdl:part name="parameters" element="xsns:addAttachmentToContact_Request" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_addAttachmentToContact_ResponseMsg">
+    <wsdl:part name="result" element="xsns:addAttachmentToContact_Response" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_createProspect_RequestMsg">
+    <wsdl:part name="parameters" element="xsns:createProspect_Request" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_createProspect_ResponseMsg">
+    <wsdl:part name="result" element="xsns:createProspect_Response" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_getSecurityWord_RequestMsg">
+    <wsdl:part name="parameters" element="xsns:getSecurityWord_Request" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_getSecurityWord_ResponseMsg">
+    <wsdl:part name="result" element="xsns:getSecurityWord_Response" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_getVariableDeposit_RequestMsg">
+    <wsdl:part name="parameters" element="xsns:getVariableDeposit_Request" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagement_v1_0_getVariableDeposit_ResponseMsg">
+    <wsdl:part name="result" element="xsns:getVariableDeposit_Response" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+    <wsdl:part name="messageHeader" element="xsns:MessageHeader" xmlns:xsns="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:message name="RetailerManagementExceptionMsg">
+    <wsdl:part name="RetailerManagementException" element="xsns:RetailerManagementException" xmlns:xsns="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types"/>
+  </wsdl:message>
+  <wsdl:portType name="RetailerManagement_v1_0_Port">
+    <wsdl:operation name="addAttachmentToContact">
+      <wsdl:input name="addAttachmentToContactRequest" message="ns0:RetailerManagement_v1_0_addAttachmentToContact_RequestMsg"/>
+      <wsdl:output name="addAttachmentToContactResponse" message="ns0:RetailerManagement_v1_0_addAttachmentToContact_ResponseMsg"/>
+      <wsdl:fault name="RetailerManagementExceptionMsg" message="ns0:RetailerManagementExceptionMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="createProspect">
+      <wsdl:input name="createProspectRequest" message="ns0:RetailerManagement_v1_0_createProspect_RequestMsg"/>
+      <wsdl:output name="createProspectResponse" message="ns0:RetailerManagement_v1_0_createProspect_ResponseMsg"/>
+      <wsdl:fault name="RetailerManagementExceptionMsg" message="ns0:RetailerManagementExceptionMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityWord">
+      <wsdl:input name="getSecurityWordRequest" message="ns0:RetailerManagement_v1_0_getSecurityWord_RequestMsg"/>
+      <wsdl:output name="getSecurityWordResponse" message="ns0:RetailerManagement_v1_0_getSecurityWord_ResponseMsg"/>
+      <wsdl:fault name="RetailerManagementExceptionMsg" message="ns0:RetailerManagementExceptionMsg"/>
+    </wsdl:operation>
+    <wsdl:operation name="getVariableDeposit">
+      <wsdl:input name="getVariableDepositRequest" message="ns0:RetailerManagement_v1_0_getVariableDeposit_RequestMsg"/>
+      <wsdl:output name="getVariableDepositResponse" message="ns0:RetailerManagement_v1_0_getVariableDeposit_ResponseMsg"/>
+      <wsdl:fault name="RetailerManagementExceptionMsg" message="ns0:RetailerManagementExceptionMsg"/>
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="RetailerManagement_v1_0_Binding" type="ns0:RetailerManagement_v1_0_Port">
+    <soap11:binding transport="http://schemas.xmlsoap.org/soap/http" style="document"/>
+    <wsdl:operation name="addAttachmentToContact">
+      <soap11:operation soapAction="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.addAttachmentToContact" style="document"/>
+      <wsdl:input name="addAttachmentToContactRequest">
+        <soap11:body parts="parameters" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_addAttachmentToContact_RequestMsg" part="messageHeader" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="addAttachmentToContactResponse">
+        <soap11:body parts="result" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_addAttachmentToContact_ResponseMsg" part="messageHeader" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RetailerManagementExceptionMsg">
+        <soap11:fault name="RetailerManagementExceptionMsg" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="createProspect">
+      <soap11:operation soapAction="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.createProspect" style="document"/>
+      <wsdl:input name="createProspectRequest">
+        <soap11:body parts="parameters" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_createProspect_RequestMsg" part="messageHeader" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="createProspectResponse">
+        <soap11:body parts="result" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_createProspect_ResponseMsg" part="messageHeader" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RetailerManagementExceptionMsg">
+        <soap11:fault name="RetailerManagementExceptionMsg" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getSecurityWord">
+      <soap11:operation soapAction="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getSecurityWord" style="document"/>
+      <wsdl:input name="getSecurityWordRequest">
+        <soap11:body parts="parameters" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_getSecurityWord_RequestMsg" part="messageHeader" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getSecurityWordResponse">
+        <soap11:body parts="result" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_getSecurityWord_ResponseMsg" part="messageHeader" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RetailerManagementExceptionMsg">
+        <soap11:fault name="RetailerManagementExceptionMsg" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+    <wsdl:operation name="getVariableDeposit">
+      <soap11:operation soapAction="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getVariableDeposit" style="document"/>
+      <wsdl:input name="getVariableDepositRequest">
+        <soap11:body parts="parameters" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_getVariableDeposit_RequestMsg" part="messageHeader" use="literal"/>
+      </wsdl:input>
+      <wsdl:output name="getVariableDepositResponse">
+        <soap11:body parts="result" use="literal"/>
+        <soap11:header message="ns0:RetailerManagement_v1_0_getVariableDeposit_ResponseMsg" part="messageHeader" use="literal"/>
+      </wsdl:output>
+      <wsdl:fault name="RetailerManagementExceptionMsg">
+        <soap11:fault name="RetailerManagementExceptionMsg" use="literal"/>
+      </wsdl:fault>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="RetailerManagement_v1_0">
+    <wsdl:port name="RetailerManagement_v1_0_Port" binding="ns0:RetailerManagement_v1_0_Binding">
+      <soap11:address location="https://10.180.180.132:1306/enterprise/retailer/retailermanagement/v1_0"/>
+    </wsdl:port>
+    <wsdl:port name="RetailerManagement_v1_0_Port.0" binding="ns0:RetailerManagement_v1_0_Binding">
+      <soap11:address location="https://10.180.180.133:1306/enterprise/retailer/retailermanagement/v1_0"/>
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>]]></con:content><con:type>http://schemas.xmlsoap.org/wsdl/</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd3.xsd</con:url><con:content><![CDATA[<xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1_0" targetNamespace="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:enterprise_messageheader_xsd="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:enterprise_common_xsd="http://services.uscellular.com/schema/enterprise/common/v1_0/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:import schemaLocation="v1_0.xsd1.xsd" namespace="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0"/>
+  <xsd:import schemaLocation="v1_0.xsd2.xsd" namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types"/>
+  <xsd:import schemaLocation="v1_0.xsd4.xsd" namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages"/>
+  <xsd:import schemaLocation="v1_0.xsd5.xsd" namespace="http://services.uscellular.com/schema/enterprise/common/v2_0/types"/>
+  <xsd:import namespace="http://services.uscellular.com/schema/enterprise/common/v1_0/types" schemaLocation="v1_0.xsd6.xsd"/>
+  <!--Types-->
+  <xsd:complexType name="ActivityStatusType">
+    <xsd:annotation>
+      <xsd:documentation>The status of the processing ( Success, failure, etc ).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:simpleContent>
+      <xsd:extension base="enterprise_messageheader_xsd:ActivityStatusEnumType">
+        <xsd:attribute name="qualifier" type="xsd:string" use="optional">
+          <xsd:annotation>
+            <xsd:documentation>Additional detail to qualify the activity status.</xsd:documentation>
+          </xsd:annotation>
+        </xsd:attribute>
+      </xsd:extension>
+    </xsd:simpleContent>
+  </xsd:complexType>
+  <xsd:simpleType name="PriorityType">
+    <xsd:annotation>
+      <xsd:documentation>Indicates message-handling priority for asynchronous messages. It must be in the range 0-9 (lowest-highest).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:int">
+      <xsd:pattern value="\d{1}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="UscSecurityTokenType">
+    <xsd:annotation>
+      <xsd:documentation>US Cellular custom security token.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:base64Binary">
+      <xsd:maxLength value="64"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--Structures-->
+  <xsd:complexType name="AnyListType">
+    <xsd:annotation>
+      <xsd:documentation>A generic list of any type of elements. Used for vendor extensions or loose element encapsulation from other namespaces.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:any minOccurs="0" maxOccurs="unbounded" processContents="lax" namespace="##any"/>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="FunctionalIdentifiersType">
+    <xsd:annotation>
+      <xsd:documentation>Any functional identifiers to be passed in appropriate for the current service.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="customerID" type="enterprise_common_xsd:CustomerIdType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The internal customer Id.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="bar" type="enterprise_common_xsd:BarType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The billing arrangement Id.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="faId" type="enterprise_common_xsd:FaIdType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The financial account Id ( customer account# on the customer bill ).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ctn" type="enterprise_common_xsd:CtnType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The cellular telephone number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="subscriberId" type="enterprise_common_xsd:SubscriberIdType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The subscriber id.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ban" type="enterprise_common_xsd:BanType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>DEPRECATED. The CARES account number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="functionalKeyValuePairs" type="enterprise_messageheader_xsd:KeyValueType" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Generic key/value pairs that can be set by the caller to pass additional non-processed data in the request.
+               This information will simply be returned in the response.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="KeyValueType">
+    <xsd:annotation>
+      <xsd:documentation>Generic key/value pair used to transport various attributes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="key" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Key value.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="value" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Data value associated with the Key field</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="MessageHeader" type="enterprise_messageheader_xsd:MessageHeaderType">
+    <xsd:annotation>
+      <xsd:documentation>MTOSI Style Standard Header, USCC extensions.  
+                    The clientID and uscSecurityToken must be set by the caller.
+                    The transactionId, processingHint and clientExtensions may also be set in the request, 
+                    Except for the uscSecurityToken, these fields will be returned in the response header unchanged. 
+                    All other fields are used internally / overwritten by the OSB and may be set in the response header.  
+                    The response header may also contain a correlationId and/or sequenceNumber if set by the service provider or OSB.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="MessageHeaderType">
+    <xsd:annotation>
+      <xsd:documentation>MTOSI Style Standard Header, USCC extensions.  
+                    The clientID and uscSecurityToken must be set by the caller.
+                    The transactionId, processingHint and clientExtensions may also be set in the request, 
+                    Except for the uscSecurityToken, these fields will be returned in the response header unchanged. 
+                    All other fields are used internally / overwritten by the OSB and may be set in the response header.  
+                    The response header may also contain a correlationId and/or sequenceNumber if set by the service provider or OSB.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="activityStatus" type="enterprise_messageheader_xsd:ActivityStatusType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Specifies the high-level response status for an activity. 
+                                    Required for response messages, including error responses.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="activityName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Identifies the name of the business
+                                    transaction activity for the message
+                                    being exchanged. The value is usually
+                                    the name of the mTOP operation, e.g.
+                                    getInventory. This value corresponds to
+                                    the 'operation' in the WSDL.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="msgName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Identifies the name of the message (or
+                                    contract) that is being exchanged as
+                                    part of an activity. E.g.
+                                    getInventoryResponse. This field
+                                    corresponds to the message name in the
+                                    WSDL.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="msgType" type="enterprise_messageheader_xsd:MsgTypeType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The type of message ( i.e. request, response, etc ).</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="msgID" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Meassage Id represents individual
+                                    request-response pair from a client to
+                                    OSB. This is used in auditing the request
+                                    response from in OSB.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="clientId" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Unique USCC genrated ID for client
+                                    system requesting service from OSB This
+                                    ID is used to grant acess level for
+                                    clients in OSB.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="uscSecurityToken" type="enterprise_messageheader_xsd:UscSecurityTokenType">
+        <xsd:annotation>
+          <xsd:documentation>US Cellular custom security token.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="priority" type="enterprise_messageheader_xsd:PriorityType" minOccurs="0" default="4">
+        <xsd:annotation>
+          <xsd:documentation>Indicates message-handling priority for
+                                    asynchronous messages. It must be in the
+                                    range 0-9 (lowest-highest). Default: 4</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="processingHint" type="enterprise_messageheader_xsd:ProcessingHintType" minOccurs="0" default="UNSPECIFIED">
+        <xsd:annotation>
+          <xsd:documentation>Hint to the middleware of how the client desires the message to be processed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="clientExtensions" type="enterprise_messageheader_xsd:KeyValueType" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Location for all vendor extensions or
+                                    header fields that are not defined in
+                                    the USCC standard header.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="correlationId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Correlation ID, if set by service provider.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="requestTimestamp" type="xsd:dateTime" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Message originating timestamp.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="responseTimestamp" type="xsd:dateTime" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Message response timestamp.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="transactionId" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>An identifier that could be set by the
+                                    originator of an asynchronous
+                                    synchronous conversational request that
+                                    will allow it to correlate the response
+                                    to the request. If this field is set, it
+                                    should be reflected in the header of the
+                                    response message. Not required for
+                                    notification headers.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="sequenceNumber" type="xsd:unsignedLong" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Message sequence number, when available.  A value of 0 indicates no sequence or a reset/wrap of the in-progress sequence.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="tracePoint" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Internal OSB field used for tracepoint tracking.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="functionalIdentifiers" type="enterprise_messageheader_xsd:FunctionalIdentifiersType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Any internal functional identifiers helpful for the service context.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+    <xsd:anyAttribute processContents="lax" namespace="##other"/>
+  </xsd:complexType>
+  <!--Enumerations-->
+  <xsd:simpleType name="ActivityStatusEnumType">
+    <xsd:annotation>
+      <xsd:documentation>Specifies the high-level response status for an
+                    activity. Required for response messages, including
+                    error responses.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="SUCCESS">
+        <xsd:annotation>
+          <xsd:documentation>The activity was successfully completed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FAILED">
+        <xsd:annotation>
+          <xsd:documentation>The activity was not successfully completed.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WARNING">
+        <xsd:annotation>
+          <xsd:documentation>The activity was successfully completed, but a potential problem may exist.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="QUEUED">
+        <xsd:annotation>
+          <xsd:documentation>The activity was queued for later processing.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MsgTypeType">
+    <xsd:annotation>
+      <xsd:documentation>The type of the message that is being exchanged as part of an activity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="REQUEST">
+        <xsd:annotation>
+          <xsd:documentation>Message representing a request for data or to perform some activity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RESPONSE">
+        <xsd:annotation>
+          <xsd:documentation>Message representing the result of a REQUEST.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NOTIFICATION">
+        <xsd:annotation>
+          <xsd:documentation>Message representing a notification of some activity.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ERROR">
+        <xsd:annotation>
+          <xsd:documentation>Message representing a failed result.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ProcessingHintType">
+    <xsd:annotation>
+      <xsd:documentation>Hint to the middleware of how the client desires the message to be processed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="BATCH">
+        <xsd:annotation>
+          <xsd:documentation>Hint to process contents of message in batch.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="REALTIME">
+        <xsd:annotation>
+          <xsd:documentation>Hint to process contents of message in realtime.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UNSPECIFIED">
+        <xsd:annotation>
+          <xsd:documentation>Processing hint is explicitly not specified.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd1.xsd</con:url><con:content>&lt;xsd:schema elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1_0" targetNamespace="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0" xmlns="http://schemas.xmlsoap.org/wsdl/" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:enterprise_retailer_retailermanagement="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0" xmlns:enterprise_retailer_retailermanagement_xsd="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" xmlns:enterprise_messageheader_xsd="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:enterprise_retailer_retailermanagement_messages="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" xmlns:ns="http://services.uscellular.com/schema/enterprise/common/v2_0/types">
+  &lt;xsd:import namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" schemaLocation="v1_0.xsd2.xsd"/>
+  &lt;xsd:import namespace="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" schemaLocation="v1_0.xsd3.xsd"/>
+  &lt;xsd:import namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" schemaLocation="v1_0.xsd4.xsd"/>
+&lt;/xsd:schema></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd2.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1_0" xmlns:enterprise_retailer_retailermanagement_xsd="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" xmlns:enterprise_common_xsd="http://services.uscellular.com/schema/enterprise/common/v2_0/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>RestailerManagement types.</xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://services.uscellular.com/schema/enterprise/common/v2_0/types" schemaLocation="v1_0.xsd5.xsd"/>
+  <!--Structures-->
+  <xsd:complexType name="AddressInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Address of the Customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="addressFormat" type="enterprise_retailer_retailermanagement_xsd:AddressFormatType">
+        <xsd:annotation>
+          <xsd:documentation>Address Format provided by Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressLine1" type="enterprise_retailer_retailermanagement_xsd:AddressLineType">
+        <xsd:annotation>
+          <xsd:documentation>Address Line1 of the Address.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressLine2" type="enterprise_retailer_retailermanagement_xsd:AddressLineType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Address Line2 of the Address.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="city" type="enterprise_common_xsd:CityType">
+        <xsd:annotation>
+          <xsd:documentation>City Name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="state" type="enterprise_common_xsd:StateType">
+        <xsd:annotation>
+          <xsd:documentation>State of the Address provided.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="zipCode" type="enterprise_common_xsd:ZipCodeType">
+        <xsd:annotation>
+          <xsd:documentation>U.S. Zip Code. Accepts only 5 digits.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ContactInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Contact Information of the Customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="firstName" type="enterprise_retailer_retailermanagement_xsd:NameType">
+        <xsd:annotation>
+          <xsd:documentation>First Name of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="middleName" type="enterprise_retailer_retailermanagement_xsd:NameType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Middle Name of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="lastName" type="enterprise_retailer_retailermanagement_xsd:NameType">
+        <xsd:annotation>
+          <xsd:documentation>Last Name of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="dateOfBirth" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>Date of Birth of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="ssn" type="enterprise_common_xsd:SSNType">
+        <xsd:annotation>
+          <xsd:documentation>SSN of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="driverLicenseInfo" type="enterprise_retailer_retailermanagement_xsd:DriverLicenseInfoType">
+        <xsd:annotation>
+          <xsd:documentation>Driver License Information of the Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="phone" type="enterprise_common_xsd:PhoneNumberType">
+        <xsd:annotation>
+          <xsd:documentation>Contact Phone Number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="pinCode" type="enterprise_retailer_retailermanagement_xsd:PINCodeType">
+        <xsd:annotation>
+          <xsd:documentation>PIN Code of the Customer</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="secretQuestion" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Secret Question.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="secretAnswer" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Secret Answer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DriverLicenseInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Drive License Information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="licenseNum" type="enterprise_retailer_retailermanagement_xsd:IdentificationNumType">
+        <xsd:annotation>
+          <xsd:documentation>Drivers License Number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="issuedstate" type="enterprise_common_xsd:StateType">
+        <xsd:annotation>
+          <xsd:documentation>State where the Driver License was issued..</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="expirationDate" type="xsd:date">
+        <xsd:annotation>
+          <xsd:documentation>License expiration date.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--Types-->
+  <xsd:simpleType name="AddressFormatType">
+    <xsd:annotation>
+      <xsd:documentation>Address Format information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="S">
+        <xsd:annotation>
+          <xsd:documentation>Street</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="R">
+        <xsd:annotation>
+          <xsd:documentation>Rural Route</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="M">
+        <xsd:annotation>
+          <xsd:documentation>Military</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="H">
+        <xsd:annotation>
+          <xsd:documentation>Highway Contract</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AddressLineType">
+    <xsd:annotation>
+      <xsd:documentation>Street address line.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ContactIdType">
+    <xsd:annotation>
+      <xsd:documentation>ContactId type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ContactObjIdType">
+    <xsd:annotation>
+      <xsd:documentation>Contact Object ID.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CreditClassType">
+    <xsd:annotation>
+      <xsd:documentation>Type of the CreditClass.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="DeviceCostTierType">
+    <xsd:annotation>
+      <xsd:documentation>Device Cost Tier.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="1">
+        <xsd:annotation>
+          <xsd:documentation>Information is available in product catalog provided to retailer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="2">
+        <xsd:annotation>
+          <xsd:documentation>Information is available in product catalog provided to retailer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="3">
+        <xsd:annotation>
+          <xsd:documentation>Information is available in product catalog provided to retailer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="FileNameType">
+    <xsd:annotation>
+      <xsd:documentation>FileName.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IdentificationNumType">
+    <xsd:annotation>
+      <xsd:documentation>Drivers License Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MimeTypeType">
+    <xsd:annotation>
+      <xsd:documentation>MIMEType type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="NameType">
+    <xsd:annotation>
+      <xsd:documentation>Type defined for FirstName, MiddleName and LastName.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="PINCodeType">
+    <xsd:annotation>
+      <xsd:documentation>PIN Code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ResultType">
+    <xsd:annotation>
+      <xsd:documentation>Result Type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="success"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SubsidyIndType">
+    <xsd:annotation>
+      <xsd:documentation>Subsidy Indicator.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Y">
+        <xsd:annotation>
+          <xsd:documentation>Indicates the device is subsidized.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="N">
+        <xsd:annotation>
+          <xsd:documentation>Indicates the device is not subsidized.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="TitleType">
+    <xsd:annotation>
+      <xsd:documentation>Title type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--Exceptions-->
+  <xsd:element name="RetailerManagementException" type="enterprise_retailer_retailermanagement_xsd:RetailerManagementExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Service Exception used for RetailerMangement.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="RetailerManagementExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of element 'RetailerMangementException'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:complexContent>
+      <xsd:extension base="enterprise_common_xsd:ServiceExceptionType">
+        <xsd:annotation>
+          <xsd:documentation>Retailer management exception extension based on USCC fault definition.</xsd:documentation>
+        </xsd:annotation>
+        <xsd:sequence/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd5.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://services.uscellular.com/schema/enterprise/common/v2_0/types" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v2_0" xmlns:enterprise_common_xsd="http://services.uscellular.com/schema/enterprise/common/v2_0/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>Common data types across all the enterprise services.
+                         This schema definition should contain the common types
+                         and elements organized in an alphabetical oder.
+                         Version: 2.0</xsd:documentation>
+  </xsd:annotation>
+  <!--Types-->
+  <xsd:simpleType name="AccountNumberType">
+    <xsd:annotation>
+      <xsd:documentation>Generic 9 digit account number base type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{9}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AddressIdType">
+    <xsd:annotation>
+      <xsd:documentation>Address ID for each Component ID.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AddressLineType">
+    <xsd:annotation>
+      <xsd:documentation>Street address line.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AmountType">
+    <xsd:annotation>
+      <xsd:documentation>US dollar value.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:decimal">
+      <xsd:fractionDigits value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="AttnLineType">
+    <xsd:annotation>
+      <xsd:documentation>Attention line on address/pkg.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="BanType">
+    <xsd:annotation>
+      <xsd:documentation>DEPRICATED. The CARES account number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="BarType">
+    <xsd:annotation>
+      <xsd:documentation>Billing arangement</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CityType">
+    <xsd:annotation>
+      <xsd:documentation>City</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CompensationIdType">
+    <xsd:annotation>
+      <xsd:documentation>Compensation Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CompIdType">
+    <xsd:annotation>
+      <xsd:documentation>Component Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CorrelationIdType">
+    <xsd:annotation>
+      <xsd:documentation>Trackable correlation or transaction ID from processing system.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CtnType">
+    <xsd:annotation>
+      <xsd:documentation>Customer telephone number</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustContactNoType">
+    <xsd:annotation>
+      <xsd:documentation>Customer Telephone Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:CtnType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustomerIdType">
+    <xsd:annotation>
+      <xsd:documentation>Customer Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustNoType">
+    <xsd:annotation>
+      <xsd:documentation>Customer Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustomerSubTypeType">
+    <xsd:annotation>
+      <xsd:documentation>Customer sub-type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustomerTypeType">
+    <xsd:annotation>
+      <xsd:documentation>Customer type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="255"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="EmailAddressType">
+    <xsd:annotation>
+      <xsd:documentation>Email address of the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,6}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="EquipmentTypeType">
+    <xsd:annotation>
+      <xsd:documentation>Service types of equipment.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ErrorCodeType">
+    <xsd:annotation>
+      <xsd:documentation>General error code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ErrorDescriptionType">
+    <xsd:annotation>
+      <xsd:documentation>Description of an error code. There may be error specific info in the string, but the initial text should describe the error and indicate the severity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="500"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="EsnType">
+    <xsd:annotation>
+      <xsd:documentation>ESN or MEID of the device.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{11}|\d{18}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="FaIdType">
+    <xsd:annotation>
+      <xsd:documentation>Financial Account Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="FirstNameType">
+    <xsd:annotation>
+      <xsd:documentation>First or given name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="GeoCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Geo code for customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="9"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="GUIDType">
+    <xsd:annotation>
+      <xsd:documentation>GUID in custom LDAP format: 8-4-4-4-20-4-4-4-4 .</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{20}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IETFGUIDType">
+    <xsd:annotation>
+      <xsd:documentation>GUID in ITEF GUID format: {8-4-4-4-12} ( braces optional ).  See http://www.ietf.org/rfc/rfc4122.txt for details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\{?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IndicatorBooleanType">
+    <xsd:annotation>
+      <xsd:documentation>Indicator Type. Possible values are true and false.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:boolean"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="IndicatorStringType">
+    <xsd:annotation>
+      <xsd:documentation>Indicator Type. Possible values are Y, N or NA (can be used for not available/not applicable scenarios).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IssueTypeType">
+    <xsd:annotation>
+      <xsd:documentation>Issue Type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="32"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ItemDescriptionType">
+    <xsd:annotation>
+      <xsd:documentation>Item Description from catalog.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LastNameType">
+    <xsd:annotation>
+      <xsd:documentation>Last name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LocationCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Location Code</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="LocationIdType">
+    <xsd:annotation>
+      <xsd:documentation>Location Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="MakeType">
+    <xsd:annotation>
+      <xsd:documentation>Device Make.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MdnType">
+    <xsd:annotation>
+      <xsd:documentation>Member Directory Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MdnStatusType">
+    <xsd:annotation>
+      <xsd:documentation>Member Directory Number status. The possible values are 2 character abbreviations, as follows:
+				AC - 	Active
+				CE - 	Ceased
+				IN   - 	Initialized
+				NA - 	Not Active
+				PA - 	Pending Activation
+				SU - 	Suspended
+				AS - 	AS</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="MessageNumberType">
+    <xsd:annotation>
+      <xsd:documentation>Message number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="3"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MessageTextType">
+    <xsd:annotation>
+      <xsd:documentation>Message text.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="220"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MinType">
+    <xsd:annotation>
+      <xsd:documentation>Mobile Identification Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ModelType">
+    <xsd:annotation>
+      <xsd:documentation>Device Model.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MSIdType">
+    <xsd:annotation>
+      <xsd:documentation>Customer MSId.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:MinType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="NameType">
+    <xsd:annotation>
+      <xsd:documentation>General name field.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="40"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="NumberOfMonthsType">
+    <xsd:annotation>
+      <xsd:documentation>The term in months, generally used to refer the contract term of a subscriber.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:positiveInteger"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="OperatorIdType">
+    <xsd:annotation>
+      <xsd:documentation>Operator Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="PhoneNumberType">
+    <xsd:annotation>
+      <xsd:documentation>General phone number.  The number could be international and may have '+ - ( )', e.g.  +1(800)555-1212.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="PostalCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Postal code for the shipping address.
+                        The postal code must consist of 5 to 9 digits.
+                        If the billing country is the U.S., the 9-digit postal code must follow this format:
+                          [5 digits]  or  [5 digits][dash][4 digits] ( optional dash )
+                            Example: 12345-6789 or 123456789 
+                        If the billing country is Canada, the 6-digit postal code must follow this format:
+                          [alpha][numeric][alpha][space][numeric][alpha][numeric]
+                            Example: A1B 2C3</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="10"/>
+      <xsd:pattern value="((\d{5}-?\d{4})|(\d{5})|([A-CEGHJ-NPR-TVXZ]\d[A-CEGHJ-NPR-TV-Z]\s\d[A-CEGHJ-NPR-TV-Z]\d))"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="RequestTransactionIdType">
+    <xsd:annotation>
+      <xsd:documentation>Request ( incomming ) transaction id.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:TransactionIdType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="ResponseTransactionIdType">
+    <xsd:annotation>
+      <xsd:documentation>Response ( outgoing ) transaction id.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:TransactionIdType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="RoutingNumberType">
+    <xsd:annotation>
+      <xsd:documentation>Routing number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SimType">
+    <xsd:annotation>
+      <xsd:documentation>Subscriber identity module of the device.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{20}|\d{22}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SocType">
+    <xsd:annotation>
+      <xsd:documentation>SOC Type</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="SubscriberIdType">
+    <xsd:annotation>
+      <xsd:documentation>Subscriber Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="SSNType">
+    <xsd:annotation>
+      <xsd:documentation>9 digit SSN type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{9}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SSNLastFourType">
+    <xsd:annotation>
+      <xsd:documentation>SSN type for last 4 digits..</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="TransactionIdType">
+    <xsd:annotation>
+      <xsd:documentation>Transaction Id.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="UICCIDType">
+    <xsd:annotation>
+      <xsd:documentation>Each SIM is internationally identified by its integrated circuit card identifier (ICCID). ICCIDs are stored in the SIM cards and are also engraved or printed on the SIM card body during a process called personalization. The ICCID is defined by the ITU-T recommendation E.118 as the Primary Account Number. Its layout is based on ISO/IEC 7812. According to E.118, the number is up to 19 digits long, including a single check digit calculated using the Luhn algorithm. However, the GSM Phase 1 defined the ICCID length as 10 octets with operator-specific structure. On GSM SIM cards there are 20-digit (19+1) and 19-digit (18+1) ICCIDs in use, depending upon the issuer. However, a single issuer always uses the same size for its ICCIDs.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+      <xsd:pattern value="\d{19,20}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ZipCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Specific 5 or 9 digit US postal zip code, no dash allowed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="9"/>
+      <xsd:pattern value="[0-9]{5}([0-9]{4})?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--Structures-->
+  <xsd:complexType name="AddressType">
+    <xsd:annotation>
+      <xsd:documentation>US postal address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="addressType" type="enterprise_common_xsd:AddressTypeType">
+        <xsd:annotation>
+          <xsd:documentation>Address Type.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="firstName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>First name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="lastName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Last Name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressLine1" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Street address or PO Box.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressLine2" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Additional street address line 2.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="city" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>City - Required.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="state" type="enterprise_common_xsd:StateType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Two letter US state code.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="zipcode" type="enterprise_common_xsd:ZipCodeType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>5 or 9 digit zip code - 5 digit US zip code required at a minimum.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DeviceAttributeType">
+    <xsd:annotation>
+      <xsd:documentation>Structure holding device attribute information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="componentID" type="enterprise_common_xsd:CompIdType">
+        <xsd:annotation>
+          <xsd:documentation>Attribute's component ID.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="defaultValue" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Attribute???s default value.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DeviceAttributesType">
+    <xsd:annotation>
+      <xsd:documentation>Structure holding device attributes.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="deviceAttribute" type="enterprise_common_xsd:DeviceAttributeType" minOccurs="0" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Device attribute information.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="DeviceInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Structure holding name the device information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="type" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The type of the device.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="esn" type="enterprise_common_xsd:EsnType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The Equipment Serial Number or MEID of the subscriber.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="sim" type="enterprise_common_xsd:SimType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The Subscriber identity module card number of the device.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="ErrorInformationType">
+    <xsd:annotation>
+      <xsd:documentation>Structure to hode general error information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="errorCode" type="enterprise_common_xsd:ErrorCodeType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The error code assigned to the error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="errorDescription" type="enterprise_common_xsd:ErrorDescriptionType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The error description indicating the type and severity, and any corrective action if known.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PaymentInfoType">
+    <xsd:annotation>
+      <xsd:documentation>Container holding Payment details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="paymentMethod" type="enterprise_common_xsd:PaymentMethodType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Payment method.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="depositAmount" type="enterprise_common_xsd:AmountType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Deposit amount.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="depositAccountNumber" type="enterprise_common_xsd:AccountNumberType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Deposit account number.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:complexType name="PersonType">
+    <xsd:annotation>
+      <xsd:documentation>Container holding Person Details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="customerId" type="enterprise_common_xsd:CustomerIdType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Customer id of the subscriber.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="status" type="enterprise_common_xsd:SubscriptionStatusType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Subscriber status.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="birthDate" type="xsd:date" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Date of birth.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="birthPlace" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Location of birth.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="deathDate" type="xsd:date" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Date of death.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="familyName" type="enterprise_common_xsd:LastNameType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Family or last name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="formattedName" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Preformatted concatenation of other components of the name. If empty, first, middle and last names are concatenated.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="gender" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Gender. See Gender. choice list. This object contains reference id of the gender CRM choice list.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="firstName" type="enterprise_common_xsd:FirstNameType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Give or first name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="id" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Unique identifier that may be optionally assigned by the service consumer on create, or otherwise allocated by the system using a numbering scheme.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="middleName" type="enterprise_common_xsd:NameType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Middle name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="nameChangeDate" type="xsd:date" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Date of the last name change.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="salutation" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Formal salutation, for example Mr., Mrs., Ms. See Salutation choice list This object contains reference id of the salutation CRM choice list.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="pin" type="xsd:string" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The pin code used for authenticating the contact person.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="faId" type="enterprise_common_xsd:FaIdType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Financial Account Id of the subscriber's account.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--Enumerations-->
+  <xsd:simpleType name="AddressTypeType">
+    <xsd:annotation>
+      <xsd:documentation>The type of Address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Billing">
+        <xsd:annotation>
+          <xsd:documentation>The billing address of the account.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Primary">
+        <xsd:annotation>
+          <xsd:documentation>The physical premise address of the account.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="PaymentMethodType">
+    <xsd:annotation>
+      <xsd:documentation>Payment method.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="Bank">
+        <xsd:annotation>
+          <xsd:documentation>Bank payment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Cash">
+        <xsd:annotation>
+          <xsd:documentation>Cash payment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="Check">
+        <xsd:annotation>
+          <xsd:documentation>Check payment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CreditCard">
+        <xsd:annotation>
+          <xsd:documentation>Credit card payment.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SubscriptionStatusType">
+    <xsd:annotation>
+      <xsd:documentation>Subscription Status.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:enumeration value="ACTIVE">
+        <xsd:annotation>
+          <xsd:documentation>Subscriber status is active.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CANCELLED">
+        <xsd:annotation>
+          <xsd:documentation>Subscriber status is canceled.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SUSPENDED">
+        <xsd:annotation>
+          <xsd:documentation>Subscriber status is suspended.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="StateType">
+    <xsd:annotation>
+      <xsd:documentation>State information of the address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="2"/>
+      <xsd:maxLength value="2"/>
+      <xsd:enumeration value="AL">
+        <xsd:annotation>
+          <xsd:documentation>Alabama</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MT">
+        <xsd:annotation>
+          <xsd:documentation>Montana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AK">
+        <xsd:annotation>
+          <xsd:documentation>Alaska</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NE">
+        <xsd:annotation>
+          <xsd:documentation>Nebraska</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AZ">
+        <xsd:annotation>
+          <xsd:documentation>Arizona</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NV">
+        <xsd:annotation>
+          <xsd:documentation>Nevada</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AR">
+        <xsd:annotation>
+          <xsd:documentation>Arkansas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NH">
+        <xsd:annotation>
+          <xsd:documentation>New Hampshire</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CA">
+        <xsd:annotation>
+          <xsd:documentation>California</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NJ">
+        <xsd:annotation>
+          <xsd:documentation>New Jersey</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CO">
+        <xsd:annotation>
+          <xsd:documentation>Colorado</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NM">
+        <xsd:annotation>
+          <xsd:documentation>New Mexico</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CT">
+        <xsd:annotation>
+          <xsd:documentation>Connecticut</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NY">
+        <xsd:annotation>
+          <xsd:documentation>New York</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DE">
+        <xsd:annotation>
+          <xsd:documentation>Delaware</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NC">
+        <xsd:annotation>
+          <xsd:documentation>North Carolina</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FL">
+        <xsd:annotation>
+          <xsd:documentation>Florida</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ND">
+        <xsd:annotation>
+          <xsd:documentation>North Dakota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GA">
+        <xsd:annotation>
+          <xsd:documentation>Georgia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OH">
+        <xsd:annotation>
+          <xsd:documentation>Ohio</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HI">
+        <xsd:annotation>
+          <xsd:documentation>Hawaii</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OK">
+        <xsd:annotation>
+          <xsd:documentation>Oklahoma</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ID">
+        <xsd:annotation>
+          <xsd:documentation>Idaho</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OR">
+        <xsd:annotation>
+          <xsd:documentation>Oregon</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IL">
+        <xsd:annotation>
+          <xsd:documentation>Illinois</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PA">
+        <xsd:annotation>
+          <xsd:documentation>Pennsylvania</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IN">
+        <xsd:annotation>
+          <xsd:documentation>Indiana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RI">
+        <xsd:annotation>
+          <xsd:documentation>Rhode Island</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IA">
+        <xsd:annotation>
+          <xsd:documentation>Iowa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SC">
+        <xsd:annotation>
+          <xsd:documentation>South Carolina</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="KS">
+        <xsd:annotation>
+          <xsd:documentation>Kansas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SD">
+        <xsd:annotation>
+          <xsd:documentation>South Dakota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="KY">
+        <xsd:annotation>
+          <xsd:documentation>Kentucky</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TN">
+        <xsd:annotation>
+          <xsd:documentation>Tennessee</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LA">
+        <xsd:annotation>
+          <xsd:documentation>Louisiana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TX">
+        <xsd:annotation>
+          <xsd:documentation>Texas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ME">
+        <xsd:annotation>
+          <xsd:documentation>Maine</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UT">
+        <xsd:annotation>
+          <xsd:documentation>Utah</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MD">
+        <xsd:annotation>
+          <xsd:documentation>Maryland</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VT">
+        <xsd:annotation>
+          <xsd:documentation>Vermont</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MA">
+        <xsd:annotation>
+          <xsd:documentation>Massachusetts</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VA">
+        <xsd:annotation>
+          <xsd:documentation>Virginia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MI">
+        <xsd:annotation>
+          <xsd:documentation>Michigan</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WA">
+        <xsd:annotation>
+          <xsd:documentation>Washington</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MN">
+        <xsd:annotation>
+          <xsd:documentation>Minnesota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WV">
+        <xsd:annotation>
+          <xsd:documentation>West Virginia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MS">
+        <xsd:annotation>
+          <xsd:documentation>Mississippi</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WI">
+        <xsd:annotation>
+          <xsd:documentation>Wisconsin</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MO">
+        <xsd:annotation>
+          <xsd:documentation>Missouri</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WY">
+        <xsd:annotation>
+          <xsd:documentation>Wyoming</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DC">
+        <xsd:annotation>
+          <xsd:documentation>District of Columbia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AA">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Americas (except Canada)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AE">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Canada/Europe/Middle East/Africa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AP">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Pacific</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AS">
+        <xsd:annotation>
+          <xsd:documentation>American Somoa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FM">
+        <xsd:annotation>
+          <xsd:documentation>Federated States of Micronesia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GU">
+        <xsd:annotation>
+          <xsd:documentation>Guam</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MH">
+        <xsd:annotation>
+          <xsd:documentation>Marshall Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MP">
+        <xsd:annotation>
+          <xsd:documentation>Northern Mariana Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PR">
+        <xsd:annotation>
+          <xsd:documentation>Puerto Rico</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PW">
+        <xsd:annotation>
+          <xsd:documentation>Palau (Balau)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VI">
+        <xsd:annotation>
+          <xsd:documentation>U.S. Virgin Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AB">
+        <xsd:annotation>
+          <xsd:documentation>Alberta</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BC">
+        <xsd:annotation>
+          <xsd:documentation>British Columbia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MB">
+        <xsd:annotation>
+          <xsd:documentation>Manitoba</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NB">
+        <xsd:annotation>
+          <xsd:documentation>New Brunswick</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NL">
+        <xsd:annotation>
+          <xsd:documentation>Newfoundland and Labrador</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NT">
+        <xsd:annotation>
+          <xsd:documentation>Northwest Territories</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NS">
+        <xsd:annotation>
+          <xsd:documentation>Nova Scotia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NU">
+        <xsd:annotation>
+          <xsd:documentation>Nunavut</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ON">
+        <xsd:annotation>
+          <xsd:documentation>Ontario</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PE">
+        <xsd:annotation>
+          <xsd:documentation>Prince Edward Island</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="QC">
+        <xsd:annotation>
+          <xsd:documentation>Quebec</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SK">
+        <xsd:annotation>
+          <xsd:documentation>Saskatchewan</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="YT">
+        <xsd:annotation>
+          <xsd:documentation>Yukon</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="KeyValuePairType">
+    <xsd:annotation>
+      <xsd:documentation>Defines KeyValuePair structure.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="key" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Contains attribute name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="value" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Contains attribute value of the respective attribute name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--Exceptions-->
+  <xsd:element name="ServiceException" type="enterprise_common_xsd:ServiceExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Base exception definition used in ESB enterprise services.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="ServiceExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Base exception definition used in ESB enterprise services.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="errorInformation" type="enterprise_common_xsd:ErrorInformationType">
+        <xsd:annotation>
+          <xsd:documentation>Error code and description.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="faultDetails" type="xsd:anyType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Fault details represent soap fault details received by OSB.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd4.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1_0" xmlns:enterprise_retailer_retailermanagement_messages="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" xmlns:enterprise_common_xsd="http://services.uscellular.com/schema/enterprise/common/v2_0/types" xmlns:enterprise_retailer_retailermanagement_xsd="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>Contains Messages used for operations in RetailerManagement service..</xsd:documentation>
+  </xsd:annotation>
+  <xsd:import namespace="http://services.uscellular.com/schema/enterprise/common/v2_0/types" schemaLocation="v1_0.xsd5.xsd"/>
+  <xsd:import namespace="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types" schemaLocation="v1_0.xsd2.xsd"/>
+  <xsd:element name="createProspect_Request" type="enterprise_retailer_retailermanagement_messages:createProspect_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Request element for createProspect() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="createProspect_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'createProspect_Request'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="contactInfo" type="enterprise_retailer_retailermanagement_xsd:ContactInfoType">
+        <xsd:annotation>
+          <xsd:documentation>Contact Information of new Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="addressInfo" type="enterprise_retailer_retailermanagement_xsd:AddressInfoType">
+        <xsd:annotation>
+          <xsd:documentation>Address Information of new Customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="createProspect_Response" type="enterprise_retailer_retailermanagement_messages:createProspect_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Response element for createProspect() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="createProspect_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'createProspect_Response'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="addressId" type="enterprise_common_xsd:AddressIdType">
+        <xsd:annotation>
+          <xsd:documentation>Address reference id.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="customerId" type="enterprise_common_xsd:CustomerIdType">
+        <xsd:annotation>
+          <xsd:documentation>Unique identifier for the customer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="barId" type="enterprise_common_xsd:BarType">
+        <xsd:annotation>
+          <xsd:documentation>Unique identifier for the billing arrangement.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="contactId" type="enterprise_retailer_retailermanagement_xsd:ContactIdType">
+        <xsd:annotation>
+          <xsd:documentation>Primary ContactId. Unique identifier for the contact.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="contactObjId" type="enterprise_retailer_retailermanagement_xsd:ContactObjIdType">
+        <xsd:annotation>
+          <xsd:documentation>Contact Object Id</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="faId" type="enterprise_common_xsd:FaIdType">
+        <xsd:annotation>
+          <xsd:documentation>Unique identifier for the financial account.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="addAttachmentToContact_Request" type="enterprise_retailer_retailermanagement_messages:addAttachmentToContact_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Request element for addAttachmentToContact() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="addAttachmentToContact_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'addAttachmentToContact_Request'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="contactId" type="enterprise_retailer_retailermanagement_xsd:ContactIdType">
+        <xsd:annotation>
+          <xsd:documentation>Obj Id of the contact. Possible get it from createProspect API.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="title" type="enterprise_retailer_retailermanagement_xsd:TitleType">
+        <xsd:annotation>
+          <xsd:documentation>Title of the file. If already exist, the file won't be updated and no indication is returned.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="fileName" type="enterprise_retailer_retailermanagement_xsd:FileNameType">
+        <xsd:annotation>
+          <xsd:documentation>File Name that would be used to store the file on the server.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="fileContents" type="xsd:byte" maxOccurs="unbounded">
+        <xsd:annotation>
+          <xsd:documentation>Contents of the file.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="mimeType" type="enterprise_retailer_retailermanagement_xsd:MimeTypeType">
+        <xsd:annotation>
+          <xsd:documentation>MIME type of the file. For e.g. text/plain</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="addAttachmentToContact_Response" type="enterprise_retailer_retailermanagement_messages:addAttachmentToContact_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Response element for addAttachmentToContact() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="addAttachmentToContact_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'addAttachmentToContact_Response'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="result" type="enterprise_retailer_retailermanagement_xsd:ResultType">
+        <xsd:annotation>
+          <xsd:documentation>Result of the request submitted.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getVariableDeposit_Request" type="enterprise_retailer_retailermanagement_messages:getVariableDeposit_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Request element for getVariableDeposit() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="getVariableDeposit_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'getVariableDeposit_Request'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="creditClass" type="enterprise_retailer_retailermanagement_xsd:CreditClassType">
+        <xsd:annotation>
+          <xsd:documentation>Credit Class of the Customer. Valid values are A to Z and '*'.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="subsidyInd" type="enterprise_retailer_retailermanagement_xsd:SubsidyIndType">
+        <xsd:annotation>
+          <xsd:documentation>Indicates whether the device is subsidized or not.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="deviceCostTier" type="enterprise_retailer_retailermanagement_xsd:DeviceCostTierType">
+        <xsd:annotation>
+          <xsd:documentation>Device Cost Tier. Information available in product catalog provided to retailer.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getVariableDeposit_Response" type="enterprise_retailer_retailermanagement_messages:getVariableDeposit_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Response element for getVariableDeposit() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="getVariableDeposit_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'getVariableDeposit_Response'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="depositAmount" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Deposit Amount returned per line.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getSecurityWord_Request" type="enterprise_retailer_retailermanagement_messages:getSecurityWord_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Request element for getSecurityWord() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="getSecurityWord_RequestType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'getSecurityWord_Request'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="locationId" type="enterprise_common_xsd:LocationIdType" minOccurs="0" maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>Optional element. Added for possible future use.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="operatorId" type="enterprise_common_xsd:OperatorIdType" minOccurs="0" maxOccurs="1">
+        <xsd:annotation>
+          <xsd:documentation>Optional element. Added for possible future use.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <xsd:element name="getSecurityWord_Response" type="enterprise_retailer_retailermanagement_messages:getSecurityWord_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Response element for getSecurityWord() operation.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="getSecurityWord_ResponseType">
+    <xsd:annotation>
+      <xsd:documentation>Definition of the element 'getSecurityWord_Response'.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="wordOfTheDay" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Current security word of the day.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part><con:part><con:url>https://internalservices.sit6.uscc.com/enterprise/retailer/retailermanagement/v1_0.xsd6.xsd</con:url><con:content><![CDATA[<xsd:schema targetNamespace="http://services.uscellular.com/schema/enterprise/common/v1_0/types" elementFormDefault="qualified" attributeFormDefault="unqualified" version="v1_0" xmlns:enterprise_common_xsd="http://services.uscellular.com/schema/enterprise/common/v1_0/types" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <xsd:annotation>
+    <xsd:documentation>Common data types across all the enterprise services.
+                         This schema definition should contain the common types
+                         and elements organized in an alphabetical oder.
+                         Version: 1.0</xsd:documentation>
+  </xsd:annotation>
+  <!--Types-->
+  <xsd:simpleType name="AccountNumberType">
+    <xsd:annotation>
+      <xsd:documentation>Generic 9 digit account number base type.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{9}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="BanType">
+    <xsd:annotation>
+      <xsd:documentation>DEPRICATED. The CARES account number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="BarType">
+    <xsd:annotation>
+      <xsd:documentation>Billing arangement</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CityType">
+    <xsd:annotation>
+      <xsd:documentation>City</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="30"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CompIdType">
+    <xsd:annotation>
+      <xsd:documentation>Component Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CompensationIdType">
+    <xsd:annotation>
+      <xsd:documentation>Compensation Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="CtnType">
+    <xsd:annotation>
+      <xsd:documentation>Customer telephone number</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="CustomerIdType">
+    <xsd:annotation>
+      <xsd:documentation>Customer Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="EmailAddressType">
+    <xsd:annotation>
+      <xsd:documentation>Email address of the customer.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[a-zA-Z0-9._%+\-]+@[a-zA-Z0-9.\-]+\.[a-zA-Z]{2,6}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ErrorCodeType">
+    <xsd:annotation>
+      <xsd:documentation>General error code.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="10"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ErrorDescriptionType">
+    <xsd:annotation>
+      <xsd:documentation>Description of an error code. There may be error specific info in the string, but the initial text should describe the error and indicate the severity.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="500"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="EsnType">
+    <xsd:annotation>
+      <xsd:documentation>ESN or MEID of the device.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{11}|\d{18}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="FaIdType">
+    <xsd:annotation>
+      <xsd:documentation>Financial Account Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="FirstNameType">
+    <xsd:annotation>
+      <xsd:documentation>First or given name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="GUIDType">
+    <xsd:annotation>
+      <xsd:documentation>GUID in custom LDAP format: 8-4-4-4-20-4-4-4-4 .</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="[A-Fa-f0-9]{8}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{20}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}-[A-Fa-f0-9]{4}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IETFGUIDType">
+    <xsd:annotation>
+      <xsd:documentation>GUID in ITEF GUID format: {8-4-4-4-12} ( braces optional ).  See http://www.ietf.org/rfc/rfc4122.txt for details.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\{?[0-9a-fA-F]{8}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{4}-[0-9a-fA-F]{12}\}?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="IndicatorStringType">
+    <xsd:annotation>
+      <xsd:documentation>Indicator Type. Possible values are Y, N or NA (can be used for not available/not applicable scenarios).</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="2"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LastNameType">
+    <xsd:annotation>
+      <xsd:documentation>Last Name</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="50"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="LocationCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Location Code</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="LocationIdType">
+    <xsd:annotation>
+      <xsd:documentation>Location Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="MdnType">
+    <xsd:annotation>
+      <xsd:documentation>Member Directory Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="MinType">
+    <xsd:annotation>
+      <xsd:documentation>Mobile Identification Number.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:pattern value="\d{10}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="OperatorIdType">
+    <xsd:annotation>
+      <xsd:documentation>Operator Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="PhoneNumberType">
+    <xsd:annotation>
+      <xsd:documentation>General phone number.  The number could be international and may have '+ - ( )', e.g.  +1(800)555-1212.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="PostalCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Postal code for the shipping address.
+                        The postal code must consist of 5 to 9 digits.
+                        If the billing country is the U.S., the 9-digit postal code must follow this format:
+                          [5 digits]  or  [5 digits][dash][4 digits] ( optional dash )
+                            Example: 12345-6789 or 123456789 
+                        If the billing country is Canada, the 6-digit postal code must follow this format:
+                          [alpha][numeric][alpha][space][numeric][alpha][numeric]
+                            Example: A1B 2C3</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="1"/>
+      <xsd:maxLength value="10"/>
+      <xsd:pattern value="((\d{5}-?\d{4})|(\d{5})|([A-CEGHJ-NPR-TVXZ]\d[A-CEGHJ-NPR-TV-Z]\s\d[A-CEGHJ-NPR-TV-Z]\d))"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="RequestTransactionIdType">
+    <xsd:annotation>
+      <xsd:documentation>Request ( incomming ) transaction id.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:TransactionIdType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="ResponseTransactionIdType">
+    <xsd:annotation>
+      <xsd:documentation>Response ( outgoing ) transaction id.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:TransactionIdType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="SocType">
+    <xsd:annotation>
+      <xsd:documentation>SOC Type</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="StreetAddressLine1Type">
+    <xsd:annotation>
+      <xsd:documentation/>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="60"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="StreetAddressLine2Type">
+    <xsd:annotation>
+      <xsd:documentation>Street Address Line2</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="60"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="StreetAddressLine3Type">
+    <xsd:annotation>
+      <xsd:documentation>Street Address Line3</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="60"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="SubscriberIdType">
+    <xsd:annotation>
+      <xsd:documentation>Subscriber Id</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="enterprise_common_xsd:AccountNumberType"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="TransactionIdType">
+    <xsd:restriction base="xsd:string"/>
+  </xsd:simpleType>
+  <xsd:simpleType name="UICCIDType">
+    <xsd:annotation>
+      <xsd:documentation>Each SIM is internationally identified by its integrated circuit card identifier (ICCID). ICCIDs are stored in the SIM cards and are also engraved or printed on the SIM card body during a process called personalization. The ICCID is defined by the ITU-T recommendation E.118 as the Primary Account Number. Its layout is based on ISO/IEC 7812. According to E.118, the number is up to 19 digits long, including a single check digit calculated using the Luhn algorithm. However, the GSM Phase 1 defined the ICCID length as 10 octets with operator-specific structure. On GSM SIM cards there are 20-digit (19+1) and 19-digit (18+1) ICCIDs in use, depending upon the issuer. However, a single issuer always uses the same size for its ICCIDs.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="20"/>
+      <xsd:pattern value="\d{19,20}"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:simpleType name="ZipCodeType">
+    <xsd:annotation>
+      <xsd:documentation>Specific 5 or 9 digit US postal zip code, no dash allowed.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:maxLength value="9"/>
+      <xsd:pattern value="[0-9]{5}([0-9]{4})?"/>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <!--Structures-->
+  <xsd:complexType name="ErrorInformationType">
+    <xsd:annotation>
+      <xsd:documentation>Structure to hode genera error information.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="errorCode" type="enterprise_common_xsd:ErrorCodeType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The error code assigned to the error.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="errorDescription" type="enterprise_common_xsd:ErrorDescriptionType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>The error description indicating the type and severity, and any corrective action if known.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--Enumerations-->
+  <xsd:simpleType name="StateType">
+    <xsd:annotation>
+      <xsd:documentation>State information of the address.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:restriction base="xsd:string">
+      <xsd:minLength value="2"/>
+      <xsd:maxLength value="2"/>
+      <xsd:enumeration value="AL">
+        <xsd:annotation>
+          <xsd:documentation>Alabama</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MT">
+        <xsd:annotation>
+          <xsd:documentation>Montana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AK">
+        <xsd:annotation>
+          <xsd:documentation>Alaska</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NE">
+        <xsd:annotation>
+          <xsd:documentation>Nebraska</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AZ">
+        <xsd:annotation>
+          <xsd:documentation>Arizona</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NV">
+        <xsd:annotation>
+          <xsd:documentation>Nevada</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AR">
+        <xsd:annotation>
+          <xsd:documentation>Arkansas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NH">
+        <xsd:annotation>
+          <xsd:documentation>New Hampshire</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CA">
+        <xsd:annotation>
+          <xsd:documentation>California</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NJ">
+        <xsd:annotation>
+          <xsd:documentation>New Jersey</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CO">
+        <xsd:annotation>
+          <xsd:documentation>Colorado</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NM">
+        <xsd:annotation>
+          <xsd:documentation>New Mexico</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="CT">
+        <xsd:annotation>
+          <xsd:documentation>Connecticut</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NY">
+        <xsd:annotation>
+          <xsd:documentation>New York</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DE">
+        <xsd:annotation>
+          <xsd:documentation>Delaware</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NC">
+        <xsd:annotation>
+          <xsd:documentation>North Carolina</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FL">
+        <xsd:annotation>
+          <xsd:documentation>Florida</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ND">
+        <xsd:annotation>
+          <xsd:documentation>North Dakota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GA">
+        <xsd:annotation>
+          <xsd:documentation>Georgia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OH">
+        <xsd:annotation>
+          <xsd:documentation>Ohio</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="HI">
+        <xsd:annotation>
+          <xsd:documentation>Hawaii</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OK">
+        <xsd:annotation>
+          <xsd:documentation>Oklahoma</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ID">
+        <xsd:annotation>
+          <xsd:documentation>Idaho</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="OR">
+        <xsd:annotation>
+          <xsd:documentation>Oregon</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IL">
+        <xsd:annotation>
+          <xsd:documentation>Illinois</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PA">
+        <xsd:annotation>
+          <xsd:documentation>Pennsylvania</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IN">
+        <xsd:annotation>
+          <xsd:documentation>Indiana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="RI">
+        <xsd:annotation>
+          <xsd:documentation>Rhode Island</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="IA">
+        <xsd:annotation>
+          <xsd:documentation>Iowa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SC">
+        <xsd:annotation>
+          <xsd:documentation>South Carolina</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="KS">
+        <xsd:annotation>
+          <xsd:documentation>Kansas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SD">
+        <xsd:annotation>
+          <xsd:documentation>South Dakota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="KY">
+        <xsd:annotation>
+          <xsd:documentation>Kentucky</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TN">
+        <xsd:annotation>
+          <xsd:documentation>Tennessee</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="LA">
+        <xsd:annotation>
+          <xsd:documentation>Louisiana</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="TX">
+        <xsd:annotation>
+          <xsd:documentation>Texas</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ME">
+        <xsd:annotation>
+          <xsd:documentation>Maine</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="UT">
+        <xsd:annotation>
+          <xsd:documentation>Utah</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MD">
+        <xsd:annotation>
+          <xsd:documentation>Maryland</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VT">
+        <xsd:annotation>
+          <xsd:documentation>Vermont</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MA">
+        <xsd:annotation>
+          <xsd:documentation>Massachusetts</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VA">
+        <xsd:annotation>
+          <xsd:documentation>Virginia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MI">
+        <xsd:annotation>
+          <xsd:documentation>Michigan</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WA">
+        <xsd:annotation>
+          <xsd:documentation>Washington</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MN">
+        <xsd:annotation>
+          <xsd:documentation>Minnesota</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WV">
+        <xsd:annotation>
+          <xsd:documentation>West Virginia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MS">
+        <xsd:annotation>
+          <xsd:documentation>Mississippi</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WI">
+        <xsd:annotation>
+          <xsd:documentation>Wisconsin</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MO">
+        <xsd:annotation>
+          <xsd:documentation>Missouri</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="WY">
+        <xsd:annotation>
+          <xsd:documentation>Wyoming</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="DC">
+        <xsd:annotation>
+          <xsd:documentation>District of Columbia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AA">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Americas (except Canada)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AE">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Canada/Europe/Middle East/Africa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AP">
+        <xsd:annotation>
+          <xsd:documentation>Armed Forces Pacific</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AS">
+        <xsd:annotation>
+          <xsd:documentation>American Somoa</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="FM">
+        <xsd:annotation>
+          <xsd:documentation>Federated States of Micronesia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="GU">
+        <xsd:annotation>
+          <xsd:documentation>Guam</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MH">
+        <xsd:annotation>
+          <xsd:documentation>Marshall Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MP">
+        <xsd:annotation>
+          <xsd:documentation>Northern Mariana Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PR">
+        <xsd:annotation>
+          <xsd:documentation>Puerto Rico</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PW">
+        <xsd:annotation>
+          <xsd:documentation>Palau (Balau)</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="VI">
+        <xsd:annotation>
+          <xsd:documentation>U.S. Virgin Islands</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="AB">
+        <xsd:annotation>
+          <xsd:documentation>Alberta</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="BC">
+        <xsd:annotation>
+          <xsd:documentation>British Columbia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="MB">
+        <xsd:annotation>
+          <xsd:documentation>Manitoba</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NB">
+        <xsd:annotation>
+          <xsd:documentation>New Brunswick</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NL">
+        <xsd:annotation>
+          <xsd:documentation>Newfoundland and Labrador</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NT">
+        <xsd:annotation>
+          <xsd:documentation>Northwest Territories</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NS">
+        <xsd:annotation>
+          <xsd:documentation>Nova Scotia</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="NU">
+        <xsd:annotation>
+          <xsd:documentation>Nunavut</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="ON">
+        <xsd:annotation>
+          <xsd:documentation>Ontario</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="PE">
+        <xsd:annotation>
+          <xsd:documentation>Prince Edward Island</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="QC">
+        <xsd:annotation>
+          <xsd:documentation>Quebec</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="SK">
+        <xsd:annotation>
+          <xsd:documentation>Saskatchewan</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+      <xsd:enumeration value="YT">
+        <xsd:annotation>
+          <xsd:documentation>Yukon</xsd:documentation>
+        </xsd:annotation>
+      </xsd:enumeration>
+    </xsd:restriction>
+  </xsd:simpleType>
+  <xsd:complexType name="KeyValuePairType">
+    <xsd:annotation>
+      <xsd:documentation>Defines KeyValuePair structure.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="key" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Contains attribute name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="value" type="xsd:string">
+        <xsd:annotation>
+          <xsd:documentation>Contains attribute value of the respective attribute name.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+  <!--Exceptions-->
+  <xsd:element name="ServiceException" type="enterprise_common_xsd:ServiceExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Base exception definition used in ESB enterprise services.</xsd:documentation>
+    </xsd:annotation>
+  </xsd:element>
+  <xsd:complexType name="ServiceExceptionType">
+    <xsd:annotation>
+      <xsd:documentation>Base exception definition used in ESB enterprise services.</xsd:documentation>
+    </xsd:annotation>
+    <xsd:sequence>
+      <xsd:element name="errorInformation" type="enterprise_common_xsd:ErrorInformationType">
+        <xsd:annotation>
+          <xsd:documentation>Error code and description.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+      <xsd:element name="faultDetails" type="xsd:anyType" minOccurs="0">
+        <xsd:annotation>
+          <xsd:documentation>Fault details represent soap fault details received by OSB.</xsd:documentation>
+        </xsd:annotation>
+      </xsd:element>
+    </xsd:sequence>
+  </xsd:complexType>
+</xsd:schema>]]></con:content><con:type>http://www.w3.org/2001/XMLSchema</con:type></con:part></con:definitionCache><con:endpoints><con:endpoint>https://10.180.180.132:1306/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:endpoint>https://10.180.180.133:1306/enterprise/retailer/retailermanagement/v1_0</con:endpoint></con:endpoints><con:operation id="a030d3ec-3471-4e3e-b4c3-5bfba80143f4" isOneWay="false" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.addAttachmentToContact" name="addAttachmentToContact" bindingOperationName="addAttachmentToContact" type="Request-Response" outputName="addAttachmentToContactResponse" inputName="addAttachmentToContactRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="3428d070-6094-4f2a-b359-6b14959fd1e9" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.180.180.132:1306/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages">\r
+   <soapenv:Header>\r
+      <typ:MessageHeader>\r
+         <!--Optional:-->\r
+         <typ:activityStatus qualifier="?">?</typ:activityStatus>\r
+         <!--Optional:-->\r
+         <typ:activityName>?</typ:activityName>\r
+         <!--Optional:-->\r
+         <typ:msgName>?</typ:msgName>\r
+         <!--Optional:-->\r
+         <typ:msgType>?</typ:msgType>\r
+         <!--Optional:-->\r
+         <typ:msgID>?</typ:msgID>\r
+         <typ:clientId>?</typ:clientId>\r
+         <typ:uscSecurityToken>cid:1252739325470</typ:uscSecurityToken>\r
+         <!--Optional:-->\r
+         <typ:priority>4</typ:priority>\r
+         <!--Optional:-->\r
+         <typ:processingHint>UNSPECIFIED</typ:processingHint>\r
+         <!--Zero or more repetitions:-->\r
+         <typ:clientExtensions>\r
+            <typ:key>?</typ:key>\r
+            <typ:value>?</typ:value>\r
+         </typ:clientExtensions>\r
+         <!--Optional:-->\r
+         <typ:correlationId>?</typ:correlationId>\r
+         <!--Optional:-->\r
+         <typ:requestTimestamp>?</typ:requestTimestamp>\r
+         <!--Optional:-->\r
+         <typ:responseTimestamp>?</typ:responseTimestamp>\r
+         <!--Optional:-->\r
+         <typ:transactionId>?</typ:transactionId>\r
+         <!--Optional:-->\r
+         <typ:sequenceNumber>?</typ:sequenceNumber>\r
+         <!--Optional:-->\r
+         <typ:tracePoint>?</typ:tracePoint>\r
+         <!--Optional:-->\r
+         <typ:functionalIdentifiers>\r
+            <!--Optional:-->\r
+            <typ:customerID>?</typ:customerID>\r
+            <!--Optional:-->\r
+            <typ:bar>?</typ:bar>\r
+            <!--Optional:-->\r
+            <typ:faId>?</typ:faId>\r
+            <!--Optional:-->\r
+            <typ:ctn>?</typ:ctn>\r
+            <!--Optional:-->\r
+            <typ:subscriberId>?</typ:subscriberId>\r
+            <!--Optional:-->\r
+            <typ:ban>?</typ:ban>\r
+            <!--Zero or more repetitions:-->\r
+            <typ:functionalKeyValuePairs>\r
+               <typ:key>?</typ:key>\r
+               <typ:value>?</typ:value>\r
+            </typ:functionalKeyValuePairs>\r
+         </typ:functionalIdentifiers>\r
+      </typ:MessageHeader>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <mes:addAttachmentToContact_Request>\r
+         <mes:contactId>?</mes:contactId>\r
+         <mes:title>?</mes:title>\r
+         <mes:fileName>?</mes:fileName>\r
+         <!--1 or more repetitions:-->\r
+         <mes:fileContents>?</mes:fileContents>\r
+         <mes:mimeType>?</mes:mimeType>\r
+      </mes:addAttachmentToContact_Request>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.addAttachmentToContact"/></con:call></con:operation><con:operation id="3849cf43-8809-48cd-9067-52f0ad69473a" isOneWay="false" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.createProspect" name="createProspect" bindingOperationName="createProspect" type="Request-Response" outputName="createProspectResponse" inputName="createProspectRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="d05c705e-f485-4a6f-837a-2fb4084237bd" name="Request 1"><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;xml-fragment/></con:setting></con:settings><con:encoding>UTF-8</con:encoding><con:endpoint>https://internalservices.ENV_NAME.uscc.com/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" xmlns:typ1="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types">\r
+   <soapenv:Header>\r
+      <typ:MessageHeader>\r
+         <typ:clientId>dpUser</typ:clientId>\r
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>\r
+         <typ:correlationId>90005</typ:correlationId>\r
+         <typ:transactionId>1</typ:transactionId>\r
+      </typ:MessageHeader>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <mes:createProspect_Request>\r
+         <mes:contactInfo>\r
+            <typ1:firstName>F_NAME</typ1:firstName>\r
+            <typ1:lastName>L_NAME</typ1:lastName>\r
+            <typ1:dateOfBirth>DOB</typ1:dateOfBirth>\r
+            <typ1:ssn>SSN</typ1:ssn>\r
+            <typ1:driverLicenseInfo>\r
+               <typ1:licenseNum>DL_NUMBER</typ1:licenseNum>\r
+               <typ1:issuedstate>ISSUE_STATE</typ1:issuedstate>\r
+               <typ1:expirationDate>EXP_DATE</typ1:expirationDate>\r
+            </typ1:driverLicenseInfo>\r
+            <typ1:phone>6084414500</typ1:phone>\r
+            <typ1:pinCode>PIN</typ1:pinCode>\r
+            <typ1:secretQuestion>In what city or town was your first job?</typ1:secretQuestion>\r
+            <typ1:secretAnswer>Chicago</typ1:secretAnswer>\r
+         </mes:contactInfo>\r
+         <mes:addressInfo>\r
+            <typ1:addressFormat>S</typ1:addressFormat>\r
+            <typ1:addressLine1>ADD_LINE1</typ1:addressLine1>\r
+            <typ1:city>ADD_CITY</typ1:city>\r
+            <typ1:state>ADD_STATE</typ1:state>\r
+            <typ1:zipCode>ADD_ZIP</typ1:zipCode>\r
+         </mes:addressInfo>\r
+      </mes:createProspect_Request>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.createProspect"/><con:wsrmConfig version="1.2"/></con:call></con:operation><con:operation id="dd950169-e34e-46f1-902e-fd4354525de2" isOneWay="false" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getSecurityWord" name="getSecurityWord" bindingOperationName="getSecurityWord" type="Request-Response" outputName="getSecurityWordResponse" inputName="getSecurityWordRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="1484fade-55a8-43a2-89f4-9ac1b1c8721d" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.180.180.132:1306/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages">\r
+   <soapenv:Header>\r
+      <typ:MessageHeader>\r
+         <!--Optional:-->\r
+         <typ:activityStatus qualifier="?">?</typ:activityStatus>\r
+         <!--Optional:-->\r
+         <typ:activityName>?</typ:activityName>\r
+         <!--Optional:-->\r
+         <typ:msgName>?</typ:msgName>\r
+         <!--Optional:-->\r
+         <typ:msgType>?</typ:msgType>\r
+         <!--Optional:-->\r
+         <typ:msgID>?</typ:msgID>\r
+         <typ:clientId>?</typ:clientId>\r
+         <typ:uscSecurityToken>cid:989902246792</typ:uscSecurityToken>\r
+         <!--Optional:-->\r
+         <typ:priority>4</typ:priority>\r
+         <!--Optional:-->\r
+         <typ:processingHint>UNSPECIFIED</typ:processingHint>\r
+         <!--Zero or more repetitions:-->\r
+         <typ:clientExtensions>\r
+            <typ:key>?</typ:key>\r
+            <typ:value>?</typ:value>\r
+         </typ:clientExtensions>\r
+         <!--Optional:-->\r
+         <typ:correlationId>?</typ:correlationId>\r
+         <!--Optional:-->\r
+         <typ:requestTimestamp>?</typ:requestTimestamp>\r
+         <!--Optional:-->\r
+         <typ:responseTimestamp>?</typ:responseTimestamp>\r
+         <!--Optional:-->\r
+         <typ:transactionId>?</typ:transactionId>\r
+         <!--Optional:-->\r
+         <typ:sequenceNumber>?</typ:sequenceNumber>\r
+         <!--Optional:-->\r
+         <typ:tracePoint>?</typ:tracePoint>\r
+         <!--Optional:-->\r
+         <typ:functionalIdentifiers>\r
+            <!--Optional:-->\r
+            <typ:customerID>?</typ:customerID>\r
+            <!--Optional:-->\r
+            <typ:bar>?</typ:bar>\r
+            <!--Optional:-->\r
+            <typ:faId>?</typ:faId>\r
+            <!--Optional:-->\r
+            <typ:ctn>?</typ:ctn>\r
+            <!--Optional:-->\r
+            <typ:subscriberId>?</typ:subscriberId>\r
+            <!--Optional:-->\r
+            <typ:ban>?</typ:ban>\r
+            <!--Zero or more repetitions:-->\r
+            <typ:functionalKeyValuePairs>\r
+               <typ:key>?</typ:key>\r
+               <typ:value>?</typ:value>\r
+            </typ:functionalKeyValuePairs>\r
+         </typ:functionalIdentifiers>\r
+      </typ:MessageHeader>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <mes:getSecurityWord_Request>\r
+         <!--Optional:-->\r
+         <mes:locationId>?</mes:locationId>\r
+         <!--Optional:-->\r
+         <mes:operatorId>?</mes:operatorId>\r
+      </mes:getSecurityWord_Request>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getSecurityWord"/></con:call></con:operation><con:operation id="8abef687-0b75-4f63-8052-c2213529f663" isOneWay="false" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getVariableDeposit" name="getVariableDeposit" bindingOperationName="getVariableDeposit" type="Request-Response" outputName="getVariableDepositResponse" inputName="getVariableDepositRequest" receivesAttachments="false" sendsAttachments="false" anonymous="optional"><con:settings/><con:call id="53e11dfb-fd16-426e-8a50-148162160711" name="Request 1"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://10.180.180.132:1306/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages">\r
+   <soapenv:Header>\r
+      <typ:MessageHeader>\r
+         <!--Optional:-->\r
+         <typ:activityStatus qualifier="?">?</typ:activityStatus>\r
+         <!--Optional:-->\r
+         <typ:activityName>?</typ:activityName>\r
+         <!--Optional:-->\r
+         <typ:msgName>?</typ:msgName>\r
+         <!--Optional:-->\r
+         <typ:msgType>?</typ:msgType>\r
+         <!--Optional:-->\r
+         <typ:msgID>?</typ:msgID>\r
+         <typ:clientId>?</typ:clientId>\r
+         <typ:uscSecurityToken>cid:1352004268068</typ:uscSecurityToken>\r
+         <!--Optional:-->\r
+         <typ:priority>4</typ:priority>\r
+         <!--Optional:-->\r
+         <typ:processingHint>UNSPECIFIED</typ:processingHint>\r
+         <!--Zero or more repetitions:-->\r
+         <typ:clientExtensions>\r
+            <typ:key>?</typ:key>\r
+            <typ:value>?</typ:value>\r
+         </typ:clientExtensions>\r
+         <!--Optional:-->\r
+         <typ:correlationId>?</typ:correlationId>\r
+         <!--Optional:-->\r
+         <typ:requestTimestamp>?</typ:requestTimestamp>\r
+         <!--Optional:-->\r
+         <typ:responseTimestamp>?</typ:responseTimestamp>\r
+         <!--Optional:-->\r
+         <typ:transactionId>?</typ:transactionId>\r
+         <!--Optional:-->\r
+         <typ:sequenceNumber>?</typ:sequenceNumber>\r
+         <!--Optional:-->\r
+         <typ:tracePoint>?</typ:tracePoint>\r
+         <!--Optional:-->\r
+         <typ:functionalIdentifiers>\r
+            <!--Optional:-->\r
+            <typ:customerID>?</typ:customerID>\r
+            <!--Optional:-->\r
+            <typ:bar>?</typ:bar>\r
+            <!--Optional:-->\r
+            <typ:faId>?</typ:faId>\r
+            <!--Optional:-->\r
+            <typ:ctn>?</typ:ctn>\r
+            <!--Optional:-->\r
+            <typ:subscriberId>?</typ:subscriberId>\r
+            <!--Optional:-->\r
+            <typ:ban>?</typ:ban>\r
+            <!--Zero or more repetitions:-->\r
+            <typ:functionalKeyValuePairs>\r
+               <typ:key>?</typ:key>\r
+               <typ:value>?</typ:value>\r
+            </typ:functionalKeyValuePairs>\r
+         </typ:functionalIdentifiers>\r
+      </typ:MessageHeader>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <mes:getVariableDeposit_Request>\r
+         <mes:creditClass>?</mes:creditClass>\r
+         <mes:subsidyInd>?</mes:subsidyInd>\r
+         <mes:deviceCostTier>?</mes:deviceCostTier>\r
+      </mes:getVariableDeposit_Request>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.getVariableDeposit"/></con:call></con:operation></con:interface><con:testSuite id="22c7eba0-0940-48c3-864f-07dbd789a3d5" name="Create_Customer_v1_0"><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="815406ee-2b1d-478b-825e-70d209af2511" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="createProspect TestCase" searchProperties="true"><con:settings/><con:testStep type="request" id="ecd67e0c-9f54-4739-bc27-b1759f8b46f3" name="createProspect"><con:settings/><con:config xsi:type="con:RequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:interface>RetailerManagement_v1_0_Binding</con:interface><con:operation>createProspect</con:operation><con:request name="createProspect" outgoingWss="" incomingWss="" timeout="" sslKeystore="" useWsAddressing="false" useWsReliableMessaging="false" wssPasswordType="" id="188b5475-7992-4f68-ba58-ee60f143c471"><con:settings/><con:encoding>UTF-8</con:encoding><con:endpoint>https://internalservices.ENV_NAME.uscc.com/enterprise/retailer/retailermanagement/v1_0</con:endpoint><con:request><![CDATA[<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/messages" xmlns:typ1="http://services.uscellular.com/schema/enterprise/retailer/retailermanagement/v1_0/types">\r
+   <soapenv:Header>\r
+      <typ:MessageHeader>\r
+         <typ:clientId>dpUser</typ:clientId>\r
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>\r
+         <typ:correlationId>90005</typ:correlationId>\r
+         <typ:transactionId>1</typ:transactionId>\r
+      </typ:MessageHeader>\r
+   </soapenv:Header>\r
+   <soapenv:Body>\r
+      <mes:createProspect_Request>\r
+         <mes:contactInfo>\r
+            <typ1:firstName>F_NAME</typ1:firstName>\r
+            <typ1:lastName>L_NAME</typ1:lastName>\r
+            <typ1:dateOfBirth>DOB</typ1:dateOfBirth>\r
+            <typ1:ssn>SSN</typ1:ssn>\r
+            <typ1:driverLicenseInfo>\r
+               <typ1:licenseNum>DL_NUMBER</typ1:licenseNum>\r
+               <typ1:issuedstate>ISSUE_STATE</typ1:issuedstate>\r
+               <typ1:expirationDate>EXP_DATE</typ1:expirationDate>\r
+            </typ1:driverLicenseInfo>\r
+            <typ1:phone>6084414500</typ1:phone>\r
+            <typ1:pinCode>PIN</typ1:pinCode>\r
+            <typ1:secretQuestion>In what city or town was your first job?</typ1:secretQuestion>\r
+            <typ1:secretAnswer>Chicago</typ1:secretAnswer>\r
+         </mes:contactInfo>\r
+         <mes:addressInfo>\r
+            <typ1:addressFormat>S</typ1:addressFormat>\r
+            <typ1:addressLine1>ADD_LINE1</typ1:addressLine1>\r
+            <typ1:city>ADD_CITY</typ1:city>\r
+            <typ1:state>ADD_STATE</typ1:state>\r
+            <typ1:zipCode>ADD_ZIP</typ1:zipCode>\r
+         </mes:addressInfo>\r
+      </mes:createProspect_Request>\r
+   </soapenv:Body>\r
+</soapenv:Envelope>]]></con:request><con:credentials><con:authType>No Authorization</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:wsaConfig mustUnderstand="NONE" version="200508" action="http://services.uscellular.com/wsdl/enterprise/retailer/retailermanagement/v1_0#RetailerManagement_v1_0_Binding.createProspect"/><con:wsrmConfig version="1.2"/></con:request></con:config></con:testStep><con:properties/></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/></con:soapui-project>

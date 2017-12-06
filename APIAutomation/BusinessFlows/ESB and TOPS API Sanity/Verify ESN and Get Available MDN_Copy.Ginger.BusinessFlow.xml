@@ -1,0 +1,231 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--Ginger Repository Item created with version: 2.5.0.0-->
+<GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="44269" EnableActivitiesVariablesDependenciesControl="False" Guid="acb81e7e-9e70-49dc-baaf-5724ab4e0f24" LastUpdate="11/10/2017 8:37:06 PM" LastUpdateBy="uchou001" Name="04 Verify ESN and Get Available MDN" ParentGuid="9636f191-4374-4c91-a6eb-012697d66c29" Source="Ginger" Version="122">
+<Activities>
+<GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Generate/Extract Required Data for Provide Flow" AutomationStatus="Development" Created="11/9/2017 5:35:22 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="1a914b6b-4cfd-43c6-bacb-b52f1f03c0e6" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
+<Acts>
+<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/9/2017 5:36:12 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Fetch Available MDN State and City" EnableRetryMechanism="False" ExternalID="" Guid="edffbea3-61d9-4250-8ae7-a3b27cfb7118" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="91de1aaa-ea02-41fd-ac68-6dc2f9763f58" Platform="NA" RetryMechanismInterval="5" SQL="with r as (select  /*+ index_ffs(r,RM1_RESOURCE_1IX) parallel_index(r,RM1_RESOURCE_1IX,8) materialize */ distinct substr(r.resource_value,1,3) np, substr(r.resource_value,4,3) nx,resource_value from   rm1_resource r     where r.resource_status='AVAILABLE' and  r.resource_type_id=1 and r.resource_pool_id = 1 )select CITY,STATE from (select g.geo_city as CITY, l.state as STATE, count(distinct r.resource_value) as MDNS  from urm1_lerg l, r, URM9_GEO_LERG_CITY_MAP g where l.npa=r.np and l.nxx=r.nx  and g.state=l.state and g.lerg_city=l.city group by g.geo_city,l.state ) where MDNS &gt; 20 order by MDNS desc" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+</FlowControls>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 5:36:18 PM" CreatedBy="uchou001" Guid="714cd614-1965-42e3-9298-71287d19540e" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="with r as (select  /*+ index_ffs(r,RM1_RESOURCE_1IX) parallel_index(r,RM1_RESOURCE_1IX,8) materialize */ distinct substr(r.resource_value,1,3) np, substr(r.resource_value,4,3) nx,resource_value from   rm1_resource r     where r.resource_status='AVAILABLE' and  r.resource_type_id=1 and r.resource_pool_id = 1 )select CITY,STATE from (select g.geo_city as CITY, l.state as STATE, count(distinct r.resource_value) as MDNS  from urm1_lerg l, r, URM9_GEO_LERG_CITY_MAP g where l.npa=r.np and l.nxx=r.nx  and g.state=l.state and g.lerg_city=l.city group by g.geo_city,l.state ) where MDNS &gt; 20 order by MDNS desc" Value="with r as (select  /*+ index_ffs(r,RM1_RESOURCE_1IX) parallel_index(r,RM1_RESOURCE_1IX,8) materialize */ distinct substr(r.resource_value,1,3) np, substr(r.resource_value,4,3) nx,resource_value from   rm1_resource r     where r.resource_status='AVAILABLE' and  r.resource_type_id=1 and r.resource_pool_id = 1 )select CITY,STATE from (select g.geo_city as CITY, l.state as STATE, count(distinct r.resource_value) as MDNS  from urm1_lerg l, r, URM9_GEO_LERG_CITY_MAP g where l.npa=r.np and l.nxx=r.nx  and g.state=l.state and g.lerg_city=l.city group by g.geo_city,l.state ) where MDNS &gt; 20 order by MDNS desc" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 5:36:18 PM" CreatedBy="uchou001" Guid="d90ff4d9-8844-49bb-a9f3-9982d6a3f5b7" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 5:36:18 PM" CreatedBy="uchou001" Guid="a2b95aac-bd14-4c61-b911-9838395987db" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 5:36:18 PM" CreatedBy="uchou001" Guid="4ce878bb-317f-46e1-b4fa-2503b01626f4" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 5:36:18 PM" CreatedBy="uchou001" Guid="8822a5e3-e21a-46e3-93ce-e7e277f06456" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</InputValues>
+
+<ReturnValues>
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 6:10:46 PM" CreatedBy="uchou001" Guid="a962bcea-8f33-465a-bd29-8188c83fb545" LastUpdate="1/1/0001 12:00:00 AM" Param="CITY" ParentGuid="00000000-0000-0000-0000-000000000000" Path="1" StoreTo="Variable" StoreToValue="glbl_MDN_City" Version="0" />
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 6:10:46 PM" CreatedBy="uchou001" Guid="48666cb1-5f54-4445-928a-0c17cf013b11" LastUpdate="1/1/0001 12:00:00 AM" Param="STATE" ParentGuid="00000000-0000-0000-0000-000000000000" Path="1" StoreTo="Variable" StoreToValue="glbl_MDN_State" Version="0" />
+</ReturnValues>
+
+<Tags>
+</Tags>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActDBValidation>
+<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/9/2017 6:13:03 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Fetch UICC From DB" EnableRetryMechanism="False" ExternalID="" Guid="25df6847-1554-433c-8c06-c144ee41e784" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="73ee1d96-8ab8-4247-b56b-71951cfaf947" Platform="NA" RetryMechanismInterval="5" SQL="select /*+ parallel (a,24) */  a.RESOURCE_VALUE as RESVAL from rm1_resource a where a.resource_status='AVAILABLE' and a.resource_type_id=4  and rownum &lt; 11 order by sys_creation_date asc, RESOURCE_VALUE desc " StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+</FlowControls>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 6:13:07 PM" CreatedBy="uchou001" Guid="32dc6fe1-f625-4c8c-8466-82efbc71a1cb" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select /*+ parallel (a,24) */  a.RESOURCE_VALUE as RESVAL from rm1_resource a where a.resource_status='AVAILABLE' and a.resource_type_id=4  and rownum &lt; 11 order by sys_creation_date asc, RESOURCE_VALUE desc " Value="select /*+ parallel (a,24) */  a.RESOURCE_VALUE as RESVAL from rm1_resource a where a.resource_status='AVAILABLE' and a.resource_type_id=4  and rownum &lt; 11 order by sys_creation_date asc, RESOURCE_VALUE desc " Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 6:13:07 PM" CreatedBy="uchou001" Guid="4b106c1e-aa2f-44c9-9e9a-6d0d32832bb2" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 6:13:07 PM" CreatedBy="uchou001" Guid="2d15f9d0-05d4-4806-852d-7e39a78790bf" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 6:13:07 PM" CreatedBy="uchou001" Guid="fa662bcc-ab2a-4751-aab8-2e83538ec736" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 6:13:07 PM" CreatedBy="uchou001" Guid="5a840b78-ced7-4eff-ac7a-b6d51ffd4eee" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</InputValues>
+
+<ReturnValues>
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 6:14:41 PM" CreatedBy="uchou001" Guid="140e1fdf-22f3-4bf9-9f5a-e11f93c1c151" LastUpdate="1/1/0001 12:00:00 AM" Param="RESVAL" ParentGuid="00000000-0000-0000-0000-000000000000" Path="1" StoreTo="Variable" StoreToValue="glbl_UICC" Version="0" />
+</ReturnValues>
+
+<Tags>
+</Tags>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActDBValidation>
+<GingerCore.Actions.ActSoapUI Active="True" ConfigOutputDS="False" Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Description="Get Available MDN" EnableRetryMechanism="False" ExternalID="" Guid="d13b884a-203e-4607-a168-6871f376bd9d" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="a2a0efca-861f-4b20-b5db-21210583e0b8" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+<GingerCore.FlowControlLib.FlowControl Active="True" Condition="&quot;{ActionStatus}&quot; = &quot;Failed&quot;" Created="11/10/2017 5:50:48 PM" CreatedBy="uchou001" FlowControlAction="GoToAction" Guid="44c64652-9a6d-4ef3-9847-664f69e31697" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Value="56f8ae5c-b9aa-4a47-9c66-be95f626fdd8#GUID_NAME#Send email with Request-Response if Get MDN Activity Failed" Version="0" />
+<GingerCore.FlowControlLib.FlowControl Active="True" Condition="&quot;{ActionStatus}&quot; = &quot;Passed&quot;" Created="11/10/2017 5:59:16 PM" CreatedBy="uchou001" FlowControlAction="GoToAction" Guid="b01d3df8-042f-4a5f-bba6-05b95ff9e1be" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7b3b18b5-5d0a-45d3-9eac-6d0d1fd549b3#GUID_NAME#Generate ESN (MEID) from the Range" Version="0" />
+</FlowControls>
+
+<GlobalProperties>
+</GlobalProperties>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="d16afda3-f013-4e27-8279-22516147445f" LastUpdate="1/1/0001 12:00:00 AM" Param="UIrelated" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="False" Value="False" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="c515db91-8543-46fd-86e8-a2dd165f5536" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="False" Value="False" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="4e384aaf-2d57-44ae-acef-7c5906ccf125" LastUpdate="1/1/0001 12:00:00 AM" Param="IgnoreValidation" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="5ec27c0b-6cc9-447c-bee5-cf89bfc618ac" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCasePropertiesRequiered" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="0ddbbb3b-ea1f-4452-8b82-96e2246f064b" LastUpdate="1/1/0001 12:00:00 AM" Param="PropertiesOrPlaceHolders" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="PlaceHolders" Value="PlaceHolders" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="1475bb08-824f-432b-b9b5-9ae4de94dc6c" LastUpdate="1/1/0001 12:00:00 AM" Param="AddXMLResponse" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:44 PM" CreatedBy="uchou001" Guid="6729483c-8013-4acb-af66-c00b230ee244" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCasePropertiesRequieredControlEnabled" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="3447e91c-fb9f-4f0d-a45d-98f347de80b6" LastUpdate="1/1/0001 12:00:00 AM" Param="XMLFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="~\DOCUMENTS\INPUT_XMLS\API_AUTO_SANITY.XML" Value="~\DOCUMENTS\INPUT_XMLS\API_AUTO_SANITY.XML" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="037aa7d6-816b-4ea2-a380-81bacda07291" LastUpdate="1/1/0001 12:00:00 AM" Param="TestSuite" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="Provide_Postpaid" Value="Provide_Postpaid" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="987b6c86-31d9-4e69-aec4-f0514b4fc9e0" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCase" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="getMDN_State_City" Value="getMDN_State_City" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="d84fb6d7-1040-4dcd-ab58-ba6a1c3b5f43" LastUpdate="1/1/0001 12:00:00 AM" Param="EndPoint" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="c358bac8-ce75-4b21-8190-4ac9859ab92f" LastUpdate="1/1/0001 12:00:00 AM" Param="HostPort" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="d111d145-fea3-4c3d-9aa7-3c831e6801d8" LastUpdate="1/1/0001 12:00:00 AM" Param="Username" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="2437254b-1296-41bc-8db6-d9861865055e" LastUpdate="1/1/0001 12:00:00 AM" Param="Password" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="6ede2373-fd85-4581-ad00-2c7ab2db66cc" LastUpdate="1/1/0001 12:00:00 AM" Param="Domain" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:15:45 PM" CreatedBy="uchou001" Guid="d1fb4429-d0ac-4950-aa87-6591b31b7200" LastUpdate="1/1/0001 12:00:00 AM" Param="PasswordWSSType" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</InputValues>
+
+<ProjectProperties>
+</ProjectProperties>
+
+<ReturnValues>
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 8:05:28 PM" CreatedBy="uchou001" Guid="dcc06cba-40c7-4ae5-8f56-bc86cd15a787" LastUpdate="1/1/0001 12:00:00 AM" mExpected="SUCCESS" Param="typ:activityStatus" ParentGuid="00000000-0000-0000-0000-000000000000" Path="/soapenv:Envelope/soapenv:Header/typ:MessageHeader/typ:activityStatus" StoreTo="None" StoreToValue="" Version="0" />
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 8:05:28 PM" CreatedBy="uchou001" Guid="16528643-3430-432c-8070-a797b43a9584" LastUpdate="1/1/0001 12:00:00 AM" Param="typ:resourceValue" ParentGuid="00000000-0000-0000-0000-000000000000" Path="/soapenv:Envelope/S:Body/mes:getAvailableResources_Response/mes:resources/typ:resourceValue" StoreTo="Variable" StoreToValue="glbl_MDN_Value" Version="0" />
+</ReturnValues>
+
+<SystemProperties>
+</SystemProperties>
+
+<Tags>
+</Tags>
+
+<TestCaseProperties>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:16:23 PM" CreatedBy="uchou001" Guid="a46fba1a-2fd5-4981-9ae1-97ae85085b57" LastUpdate="1/1/0001 12:00:00 AM" Param="ENV_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{EnvParam App=EnvDetails Param=e_envName}" Value="{EnvParam App=EnvDetails Param=e_envName}" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:16:51 PM" CreatedBy="uchou001" Guid="6c6d3e19-c387-43c7-a92c-42d0d84b1b63" LastUpdate="1/1/0001 12:00:00 AM" Param="glbl_CustomerID" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{Var Name=glbl_CustomerID}" Value="{Var Name=glbl_CustomerID}" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:17:13 PM" CreatedBy="uchou001" Guid="5566ba77-c6aa-4136-abd4-3db3084e797c" LastUpdate="1/1/0001 12:00:00 AM" Param="glbl_MDN_City" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{VBS Eval=UCase(Left(&quot;{Var Name=glbl_MDN_City}&quot;,1)) &amp; LCase(Right(&quot;{Var Name=glbl_MDN_City}&quot;,Len(&quot;{Var Name=glbl_MDN_City}&quot;)-1))}" Value="{VBS Eval=UCase(Left(&quot;{Var Name=glbl_MDN_City}&quot;,1)) &amp; LCase(Right(&quot;{Var Name=glbl_MDN_City}&quot;,Len(&quot;{Var Name=glbl_MDN_City}&quot;)-1))}" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 7:54:14 PM" CreatedBy="uchou001" Guid="5ef2975e-ff4c-454e-a5fa-6bc97437020c" LastUpdate="1/1/0001 12:00:00 AM" Param="glbl_MDN_State" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{Var Name=glbl_MDN_State}" Value="{Var Name=glbl_MDN_State}" Version="0" />
+</TestCaseProperties>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActSoapUI>
+<GingerCore.Actions.ActScript Active="True" ConfigOutputDS="False" Created="11/9/2017 11:59:34 PM" CreatedBy="uchou001" Description="Send email with Request-Response if Get MDN Activity Failed" EnableRetryMechanism="False" ExternalID="" Guid="56f8ae5c-b9aa-4a47-9c66-be95f626fdd8" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="481f1c7b-0964-4f71-a089-d7f262cc1a02" Platform="NA" RetryMechanismInterval="5" ScriptCommand="Script" ScriptInterpreter="c:\windows\system32\cmd.exe" ScriptInterpreterType="Other" ScriptName="Send_Error_Email.bat" ScriptPath="C:\GingerSolutions\APIAutomation\\Documents\Scripts\" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+</FlowControls>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/10/2017 5:21:57 PM" CreatedBy="uchou001" Guid="cd5361d1-ddd7-4db0-9c90-3bdf19e910cc" LastUpdate="1/1/0001 12:00:00 AM" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{EnvParam App=EnvDetails Param=e_envName}-GetAvailable_Resources" Value="{EnvParam App=EnvDetails Param=e_envName}-GetAvailable_Resources" Version="0" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+
+<Tags>
+</Tags>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActScript>
+<GingerCore.Actions.ActSetVariableValue Active="True" ConfigOutputDS="False" Created="11/9/2017 8:24:32 PM" CreatedBy="uchou001" Description="Generate ESN (MEID) from the Range" EnableRetryMechanism="False" ExternalID="" Guid="7b3b18b5-5d0a-45d3-9eac-6d0d1fd549b3" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="60b21953-b666-480c-a171-907bd4d231dc" Platform="NA" RetryMechanismInterval="5" SetVariableValueOption="AutoGenerateValue" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" VariableName="glbl_MEID" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+</FlowControls>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 8:24:39 PM" CreatedBy="uchou001" Guid="aa335f76-c3a4-4766-93ef-de2a313ea47d" LastUpdate="1/1/0001 12:00:00 AM" Param="Value" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="" Value="" Version="0" />
+</InputValues>
+
+<ReturnValues>
+</ReturnValues>
+
+<Tags>
+</Tags>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActSetVariableValue>
+<GingerCore.Actions.ActSoapUI Active="True" ConfigOutputDS="False" Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Description="Verify ESN Status" EnableRetryMechanism="False" ExternalID="" Guid="b66e7852-57c8-457d-bad2-ba2cb965a81d" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="9cbe4108-bfef-4b9d-9b14-60a8ece5d041" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<DSOutputConfigParams>
+</DSOutputConfigParams>
+
+<FlowControls>
+<GingerCore.FlowControlLib.FlowControl Active="True" Condition="&quot;{ActionStatus}&quot; = &quot;Failed&quot;" Created="11/9/2017 10:26:39 PM" CreatedBy="uchou001" FlowControlAction="GoToAction" Guid="cdb8a5f5-4aa6-40c7-a8c5-f9e9a07098c2" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Value="7b3b18b5-5d0a-45d3-9eac-6d0d1fd549b3#GUID_NAME#Generate ESN (MEID) from the Range" Version="0" />
+<GingerCore.FlowControlLib.FlowControl Active="True" Condition="&quot;{ActionStatus}&quot; = &quot;Passed&quot;" Created="11/9/2017 10:26:54 PM" CreatedBy="uchou001" FlowControlAction="StopBusinessFlow" Guid="4da53370-f545-493c-abcf-b1f2ca605d68" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</FlowControls>
+
+<GlobalProperties>
+</GlobalProperties>
+
+<InputValues>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="2f1c0de3-c7fd-410a-9e71-5d723f784ae5" LastUpdate="1/1/0001 12:00:00 AM" Param="UIrelated" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="f3d2d731-b668-4542-bf05-b7eb6ac0feaa" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="False" Value="False" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="1dfe62d4-3dfe-48ac-a292-2daade84e0cd" LastUpdate="1/1/0001 12:00:00 AM" Param="IgnoreValidation" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="7a5ab210-31eb-4e0a-8ee8-95971bf16378" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCasePropertiesRequiered" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="5198f054-0cc9-4b67-98cf-6b2c45626335" LastUpdate="1/1/0001 12:00:00 AM" Param="PropertiesOrPlaceHolders" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="PlaceHolders" Value="PlaceHolders" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="0f02830a-755b-47a6-80f0-b93c6e081549" LastUpdate="1/1/0001 12:00:00 AM" Param="AddXMLResponse" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:27 PM" CreatedBy="uchou001" Guid="d9867790-ccd5-4542-8c5f-0d7725532df8" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCasePropertiesRequieredControlEnabled" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="e6786c52-8755-4d7e-babd-c00dba417184" LastUpdate="1/1/0001 12:00:00 AM" Param="XMLFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="~\DOCUMENTS\INPUT_XMLS\API_AUTO_SANITY.XML" Value="~\DOCUMENTS\INPUT_XMLS\API_AUTO_SANITY.XML" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="79a0924b-8a9c-4994-be08-d4cea0ffc3ba" LastUpdate="1/1/0001 12:00:00 AM" Param="TestSuite" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="Provide_Postpaid" Value="Provide_Postpaid" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="c07e0565-8466-4641-846c-91e6694332ff" LastUpdate="1/1/0001 12:00:00 AM" Param="TestCase" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="Check_ESN_Status" Value="Check_ESN_Status" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="707a545c-dc02-4349-bd73-1fef879cd793" LastUpdate="1/1/0001 12:00:00 AM" Param="EndPoint" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="0ef589fb-aa82-46c7-849b-044a66445d56" LastUpdate="1/1/0001 12:00:00 AM" Param="HostPort" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="8120c503-00e4-4318-b20e-4699c7b2d455" LastUpdate="1/1/0001 12:00:00 AM" Param="Username" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="0488f1f8-10a1-4dba-a439-a42cf6753e03" LastUpdate="1/1/0001 12:00:00 AM" Param="Password" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="f6b38b30-d4cc-468e-b251-b1e13d7fe63b" LastUpdate="1/1/0001 12:00:00 AM" Param="Domain" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:20:29 PM" CreatedBy="uchou001" Guid="feedbb08-d84b-4f01-850e-46bcf62a69db" LastUpdate="1/1/0001 12:00:00 AM" Param="PasswordWSSType" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</InputValues>
+
+<ProjectProperties>
+</ProjectProperties>
+
+<ReturnValues>
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:23:33 PM" CreatedBy="uchou001" Guid="5145ae20-8789-49bf-b6c4-6f08a00a17ec" LastUpdate="1/1/0001 12:00:00 AM" mExpected="SUCCESS" Param="typ:activityStatus" ParentGuid="00000000-0000-0000-0000-000000000000" Path="/soapenv:Envelope/soapenv:Header/typ:MessageHeader/typ:activityStatus" StoreTo="None" StoreToValue="" Version="0" />
+<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:23:33 PM" CreatedBy="uchou001" Guid="fa8db792-d0ba-4e53-8ca2-7cf1196fe717" LastUpdate="1/1/0001 12:00:00 AM" mExpected="KV" Param="mes:status" ParentGuid="00000000-0000-0000-0000-000000000000" Path="/soapenv:Envelope/S:Body/mes:getEquipmentInfo_Response/mes:status" StoreTo="None" StoreToValue="" Version="0" />
+</ReturnValues>
+
+<SystemProperties>
+</SystemProperties>
+
+<Tags>
+</Tags>
+
+<TestCaseProperties>
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:21:00 PM" CreatedBy="uchou001" Guid="19fabf6e-ca03-4fdc-bd4d-6d990972bbad" LastUpdate="1/1/0001 12:00:00 AM" Param="glbl_MEID" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{Var Name=glbl_MEID}" Value="{Var Name=glbl_MEID}" Version="0" />
+<GingerCore.Actions.ActInputValue Created="11/9/2017 10:23:01 PM" CreatedBy="uchou001" Guid="5d095fb2-855f-453c-ad15-36042e3ec50a" LastUpdate="1/1/0001 12:00:00 AM" Param="ENV_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="{EnvParam App=EnvDetails Param=e_envName}" Value="{EnvParam App=EnvDetails Param=e_envName}" Version="0" />
+</TestCaseProperties>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Actions.ActSoapUI>
+</Acts>
+
+<Tags>
+</Tags>
+
+<Variables>
+</Variables>
+
+<VariablesDependencies>
+</VariablesDependencies>
+</GingerCore.Activity>
+</Activities>
+
+<ActivitiesGroups>
+</ActivitiesGroups>
+
+<Tags>
+</Tags>
+
+<TargetApplications>
+<GingerCore.Platforms.TargetApplication AppName="MyWebServicesApp" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Guid="a47a4fc2-929a-4719-8502-d3466297317b" LastExecutingAgentName="MyWebServicesApp" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+</TargetApplications>
+
+<Variables>
+</Variables>
+</GingerCore.BusinessFlow>

@@ -1,0 +1,1 @@
+{"Seq":1,"GUID":"61719134-28b5-4372-8c61-ce794e0c949e","ActivityName":"Create Individual Regular Customer","StartTimeStamp":"2017-11-17T22:27:39.4991082Z","EndTimeStamp":"2017-11-17T22:28:08.3519932Z","Elapsed":28844,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

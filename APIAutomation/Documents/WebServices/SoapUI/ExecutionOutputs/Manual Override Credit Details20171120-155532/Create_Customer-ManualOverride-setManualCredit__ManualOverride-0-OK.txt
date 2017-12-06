@@ -1,0 +1,94 @@
+Status: OK
+Time Taken: 10137
+Size: 2659
+Timestamp: Mon Nov 20 15:56:03 CST 2017
+TestStep: setManualCredit - ManualOverride
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit9.uscc.com/enterprise/credit/creditevaluation/v2_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit9.uscc.com
+Content-Length : 1093
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/credit/creditevaluation/v2_0#CreditEvaluation_v2_0_Binding.setManualCredit"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:transactionId>1</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:setManualCredit_Request>
+         <mes:casNumber/>
+         <mes:decisionTimestamp>2017-11-20T15:55:26.214-06:00</mes:decisionTimestamp>
+         <!--Optional:-->
+         <mes:approvedLimits>10</mes:approvedLimits>
+         <mes:decisionCode>A</mes:decisionCode>
+         <mes:decisionStatus>C</mes:decisionStatus>
+         <mes:approvedUnits>5</mes:approvedUnits>
+         <mes:score>100</mes:score>
+      </mes:setManualCredit_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 61888912
+Date : Mon, 20 Nov 2017 21:56:05 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : FAIL FAIL
+#status# : HTTP/1.1 500 Internal Server Error
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages">
+      <typ:MessageHeader>
+         <typ:activityStatus>FAILED</typ:activityStatus>
+         <typ:activityName>CreditEvaluation</typ:activityName>
+         <typ:msgName>setManualCredit</typ:msgName>
+         <typ:msgType>ERROR</typ:msgType>
+         <typ:msgID>4681157062810306504--6b3f8c8e.15fa1d93b62.-7f9c-3b5b974e-82b6-4416-9456-d1faf93f2e76</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:requestTimestamp>2017-11-20T15:56:05.886-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-20T15:56:12.696-06:00</typ:responseTimestamp>
+         <typ:transactionId>1</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <S:Fault>
+         <faultcode xmlns:private="http://schemas.xmlsoap.org/soap/envelope/">private:Server.generalException</faultcode>
+         <faultstring>USC0000040 Incoming request is missing required information.</faultstring>
+         <detail>
+            <typ:CreditEvaluationException xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">
+               <typ1:errorInformation xmlns:typ1="http://services.uscellular.com/schema/enterprise/common/v1_0/types">
+                  <typ1:errorCode>USC0000040</typ1:errorCode>
+                  <typ1:errorDescription>Incoming request is missing required information.</typ1:errorDescription>
+               </typ1:errorInformation>
+               <!--The following information may help pinpoint the error that lead to this fault.-->
+               <!--This has the msgID, the system that ESB was trying to call, and error detail XML.-->
+               <typ1:faultDetails xsi:type="private:string" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:typ1="http://services.uscellular.com/schema/enterprise/common/v1_0/types" xmlns:private="http://www.w3.org/2001/XMLSchema"><![CDATA[msgID=4681157062810306504--6b3f8c8e.15fa1d93b62.-7f9c-3b5b974e-82b6-4416-9456-d1faf93f2e76 systemName=CRM errorData=<errorDetails xmlns:ns2="http://xIUpdateCreditClassService.updatecreditclass.services.aif.crmimpl.com" xmlns:S="http://schemas.xmlsoap.org/soap/envelope/"><errorCodeX2>Credit003</errorCodeX2><errorDescX2>Missing mandatory fields</errorDescX2></errorDetails>]]></typ1:faultDetails>
+            </typ:CreditEvaluationException>
+         </detail>
+      </S:Fault>
+   </S:Body>
+</soapenv:Envelope>

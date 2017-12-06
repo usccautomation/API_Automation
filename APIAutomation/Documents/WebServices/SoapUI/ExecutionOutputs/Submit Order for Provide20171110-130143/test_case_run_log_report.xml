@@ -1,0 +1,2 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:testCaseRunLog testCase="SubmitOrder" timeTaken="7053" status="FINISHED" timeStamp="2017-11-10 13:01:53" xmlns:con="http://eviware.com/soapui/config"><con:testCaseRunLogTestStep name="SubmitOrder" timeTaken="7053" status="OK" timestamp="2017-11-10 13:02:00" endpoint="https://internalservices.sit5.uscc.com/enterprise/orders/ordermanagement/v1_0" httpStatus="200" contentLength="1369" readTime="24" totalTime="6740" dnsTime="0" connectTime="543" timeToFirstByte="6173" httpMethod="POST" ipAddress="10.180.184.8"/></con:testCaseRunLog>

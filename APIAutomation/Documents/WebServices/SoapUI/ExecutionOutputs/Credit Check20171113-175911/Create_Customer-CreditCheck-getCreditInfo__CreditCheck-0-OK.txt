@@ -1,0 +1,87 @@
+Status: OK
+Time Taken: 16404
+Size: 2432
+Timestamp: Mon Nov 13 17:59:29 CST 2017
+TestStep: getCreditInfo - CreditCheck
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit3.uscc.com/enterprise/credit/creditevaluation/v2_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit3.uscc.com
+Content-Length : 879
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/credit/creditevaluation/v2_0#CreditEvaluation_v2_0_Binding.getCreditInfo"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:transactionId>1</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:getCreditInfo_Request>
+         <mes:customerId>500000384</mes:customerId>
+         <!--Optional:-->
+         <mes:numOfLinesToAdd>5</mes:numOfLinesToAdd>
+         <mes:agentSiteId>INT1</mes:agentSiteId>
+      </mes:getCreditInfo_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 271388995
+Date : Mon, 13 Nov 2017 23:59:31 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : OK OK
+#status# : HTTP/1.1 200 OK
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <typ:MessageHeader xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types">
+         <typ:activityStatus>SUCCESS</typ:activityStatus>
+         <typ:activityName>CreditEvaluation</typ:activityName>
+         <typ:msgName>getCreditInfo</typ:msgName>
+         <typ:msgType>RESPONSE</typ:msgType>
+         <typ:msgID>9129271415328242805-662d65d5.15f9ccdaf5f.-7eef-7b1a8500-076f-478b-8f8d-6ac2f113f6d5</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:requestTimestamp>2017-11-13T17:59:31.147-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-13T17:59:44.988-06:00</typ:responseTimestamp>
+         <typ:transactionId>1</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <mes:getCreditInfo_Response xmlns:mes="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages">
+         <mes:creditInfo>
+            <typ:depositAmount xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">25.0</typ:depositAmount>
+            <typ:creditClass xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">X2</typ:creditClass>
+            <typ:validityStartDate xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">2017-11-22</typ:validityStartDate>
+            <typ:validityEndDate xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">2018-02-20</typ:validityEndDate>
+            <typ:createDate xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">2017-11-22</typ:createDate>
+            <typ:creditApplicationNo xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">10010342961C</typ:creditApplicationNo>
+            <typ:maxNumOfApprovedUnits xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">0</typ:maxNumOfApprovedUnits>
+            <typ:decisionStatus xmlns:typ="http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types">R</typ:decisionStatus>
+         </mes:creditInfo>
+      </mes:getCreditInfo_Response>
+   </S:Body>
+</soapenv:Envelope>

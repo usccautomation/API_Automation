@@ -1,0 +1,6 @@
+You have Entered
+ENV: SIT7, Activity: Create_Customer, custID: 960049664, orderId: 0, Amount: 0, User: uchou001
+
+*************************************
+DBTool Result: PASSED
+*************************************

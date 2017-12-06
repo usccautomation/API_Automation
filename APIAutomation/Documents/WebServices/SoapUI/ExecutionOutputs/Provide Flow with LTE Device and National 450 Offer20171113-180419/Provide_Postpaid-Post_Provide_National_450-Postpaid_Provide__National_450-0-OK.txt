@@ -1,0 +1,427 @@
+Status: OK
+Time Taken: 23494
+Size: 1324
+Timestamp: Mon Nov 13 18:04:27 CST 2017
+TestStep: Postpaid_Provide - National 450
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit3.uscc.com/enterprise/orders/ordermanagement/v1_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit3.uscc.com
+Content-Length : 20583
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/orders/ordermanagement/v1_0#OrderManagement_v1_0_Binding.createOrder"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/messages" xmlns:typ1="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/types" xmlns:typ2="http://services.uscellular.com/schema/enterprise/common/v2_0/types">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:transactionId>5</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:createOrder_Request>
+         <mes:orderInfo>
+            <typ1:storeId>INT1</typ1:storeId>
+            <typ1:reasonCode>CREQ</typ1:reasonCode>
+            <typ1:orderType>add a line</typ1:orderType>
+            <typ1:customerType>new customer</typ1:customerType>
+            <typ1:planType>new price plan</typ1:planType>
+         </mes:orderInfo>
+         <mes:customerInfo>
+            <typ1:barId>333333580</typ1:barId>
+            <typ1:customerId>500000384</typ1:customerId>
+         </mes:customerInfo>
+         <mes:offerInfo>
+            <typ1:newOffer>
+               <typ1:offerId>7064174</typ1:offerId>
+               <typ1:GLPIndicator>N</typ1:GLPIndicator>
+            </typ1:newOffer>
+            <!--1 or more repetitions:-->
+            <typ1:productList>
+               <typ1:productType>
+                  <typ1:productType>TM</typ1:productType>
+               </typ1:productType>
+               <!--Optional:-->
+               <!--Optional:-->
+               <typ1:mdn>2072421045</typ1:mdn>
+               <!--Optional:-->
+               <typ1:portInIndicator>N</typ1:portInIndicator>
+               <!--Optional:-->
+               <typ1:deviceInfo>
+                  <typ1:meid>21710214762</typ1:meid>
+                  <typ1:make>Apple</typ1:make>
+                  <typ1:model>IPHONE 6 SPACE GRAY 64GB</typ1:model>
+                  <typ1:subsidizedInd>N</typ1:subsidizedInd>
+                  <typ1:uicc>
+                     <typ1:uicc>89015818000510002321</typ1:uicc>
+                     <!--Optional:-->
+                  </typ1:uicc>
+                  <!--Optional:-->
+                  <typ1:phoneType>Smart</typ1:phoneType>
+                  <typ1:itemId>180847</typ1:itemId>
+                  <typ1:deviceAttributes xmlns:typ="http://services.uscellular.com/schema/enterprise/orders/inventorymanagement/v1_0/types">
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1348</typ2:componentID>
+                        <typ2:defaultValue>iOS</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1628</typ2:componentID>
+                        <typ2:defaultValue>2.64</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2172215</typ2:componentID>
+                        <typ2:defaultValue>Other</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1468</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1418</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>3038</typ2:componentID>
+                        <typ2:defaultValue>New</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1428</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2167565</typ2:componentID>
+                        <typ2:defaultValue>APSVPWELSMS</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1638</typ2:componentID>
+                        <typ2:defaultValue>0.27</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2189616</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1478</typ2:componentID>
+                        <typ2:defaultValue>Safari</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1508</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1688</typ2:componentID>
+                        <typ2:defaultValue>64</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1408</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1438</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1658</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>395376</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1708</typ2:componentID>
+                        <typ2:defaultValue>N/A</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2317755</typ2:componentID>
+                        <typ2:defaultValue>3</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1808</typ2:componentID>
+                        <typ2:defaultValue>Smart</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1458</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1778</typ2:componentID>
+                        <typ2:defaultValue>IPHONE 6 SPACE GRAY 64GB</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1838</typ2:componentID>
+                        <typ2:defaultValue>4.55</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1558</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1308</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>4368</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2255979</typ2:componentID>
+                        <typ2:defaultValue>H,M</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1528</typ2:componentID>
+                        <typ2:defaultValue>4</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1608</typ2:componentID>
+                        <typ2:defaultValue>4.7</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>11259350</typ2:componentID>
+                        <typ2:defaultValue/>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1498</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1758</typ2:componentID>
+                        <typ2:defaultValue>3x</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1338</typ2:componentID>
+                        <typ2:defaultValue>MG4F2LL/A</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1738</typ2:componentID>
+                        <typ2:defaultValue>1.2</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1828</typ2:componentID>
+                        <typ2:defaultValue>Space Gray</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1358</typ2:componentID>
+                        <typ2:defaultValue>Bar</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>6608285</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1728</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1718</typ2:componentID>
+                        <typ2:defaultValue>N/A</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>908</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1328</typ2:componentID>
+                        <typ2:defaultValue>8</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1398</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1568</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>10678939</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>4348</typ2:componentID>
+                        <typ2:defaultValue>ios_def</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>11259360</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1488</typ2:componentID>
+                        <typ2:defaultValue>N/A</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1378</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>868</typ2:componentID>
+                        <typ2:defaultValue>Apple</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>898</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1698</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1318</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1618</typ2:componentID>
+                        <typ2:defaultValue>5.44</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1538</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1588</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1548</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1818</typ2:componentID>
+                        <typ2:defaultValue>Touch</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1578</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1788</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1368</typ2:componentID>
+                        <typ2:defaultValue>14 hours/10 days</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>848</typ2:componentID>
+                        <typ2:defaultValue>180847</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>928</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1388</typ2:componentID>
+                        <typ2:defaultValue>Lightning to USB cable, Charger, headphones</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1668</typ2:componentID>
+                        <typ2:defaultValue>AAC, Protected AAC, HE-AAC, MP3, MP3 VBR, Audible, Apple Lossless, AIFF, and?WAV</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2201936</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>828</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1598</typ2:componentID>
+                        <typ2:defaultValue>Text and Pic</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1518</typ2:componentID>
+                        <typ2:defaultValue>No</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1648</typ2:componentID>
+                        <typ2:defaultValue>1334x750 pixels</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1798</typ2:componentID>
+                        <typ2:defaultValue>Apple</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>878</typ2:componentID>
+                        <typ2:defaultValue>LTE</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1748</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1678</typ2:componentID>
+                        <typ2:defaultValue>H.264 video, High Profile level 4.2, .m4v, .mp4; MPEG-4 video, Simple Profile, Motion JPEG, .avi</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>2239116</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>1768</typ2:componentID>
+                        <typ2:defaultValue>Yes</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                     <typ2:deviceAttribute>
+                        <typ2:componentID>948</typ2:componentID>
+                        <typ2:defaultValue>DH</typ2:defaultValue>
+                     </typ2:deviceAttribute>
+                  </typ1:deviceAttributes>
+               </typ1:deviceInfo>
+               <!--Zero or more repetitions:-->
+               <typ1:featureInfo>
+                  <typ1:featureId>6030244</typ1:featureId>
+                  <typ1:action>AD</typ1:action>
+               </typ1:featureInfo>
+            </typ1:productList>
+         </mes:offerInfo>
+      </mes:createOrder_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 245900017
+Date : Tue, 14 Nov 2017 00:04:28 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : OK OK
+#status# : HTTP/1.1 200 OK
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soap:Header xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <typ:MessageHeader xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types">
+         <typ:activityStatus>SUCCESS</typ:activityStatus>
+         <typ:activityName>OrderManagement</typ:activityName>
+         <typ:msgName>createOrder</typ:msgName>
+         <typ:msgType>RESPONSE</typ:msgType>
+         <typ:msgID>9129271415328242805-662d65d5.15f9ccdaf5f.-7eb7-748cb989-1930-4a09-98cb-447d048d0e11</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90001</typ:correlationId>
+         <typ:requestTimestamp>2017-11-13T18:04:28.468-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-13T18:04:50.737-06:00</typ:responseTimestamp>
+         <typ:transactionId>5</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soap:Header>
+   <soap:Body xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/">
+      <mes:createOrder_Response xmlns:mes="http://services.uscellular.com/schema/enterprise/orders/ordermanagement/v1_0/messages">
+         <mes:orderId>593681364A</mes:orderId>
+      </mes:createOrder_Response>
+   </soap:Body>
+</soapenv:Envelope>

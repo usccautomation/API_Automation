@@ -1,0 +1,1 @@
+C:\GingerSolutions\GingerJenkinsRun\Documents\Scripts\Read_Error_File.vbs %1%

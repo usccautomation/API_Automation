@@ -1,0 +1,1 @@
+{"Seq":1,"GUID":"1a914b6b-4cfd-43c6-bacb-b52f1f03c0e6","ActivityName":"Generate/Extract Required Data for Provide Flow","StartTimeStamp":"2017-11-20T20:28:45.8553044Z","EndTimeStamp":"2017-11-20T20:40:12.67998Z","Elapsed":686758,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

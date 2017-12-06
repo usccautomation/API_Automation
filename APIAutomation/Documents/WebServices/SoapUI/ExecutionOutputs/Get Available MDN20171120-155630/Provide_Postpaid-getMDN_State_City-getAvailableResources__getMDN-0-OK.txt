@@ -1,0 +1,81 @@
+Status: OK
+Time Taken: 8708
+Size: 1631
+Timestamp: Mon Nov 20 15:56:54 CST 2017
+TestStep: getAvailableResources - getMDN
+
+----------------- Messages ------------------------------
+
+----------------- Properties ------------------------------
+Encoding: UTF-8
+Endpoint: https://internalservices.sit9.uscc.com/enterprise/resources/subscriberresourcemanagement/v1_0
+
+---------------- Request ---------------------------
+Request Headers: Host : internalservices.sit9.uscc.com
+Content-Length : 927
+SOAPAction : "http://services.uscellular.com/wsdl/enterprise/resources/subscriberresourcemanagement/v1_0#SubscriberResourceManagement_v1_0_Binding.getAvailableResources"
+Accept-Encoding : gzip,deflate
+User-Agent : Apache-HttpClient/4.1.1 (java 1.5)
+Connection : Keep-Alive
+Content-Type : text/xml;charset=UTF-8
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/" xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types" xmlns:mes="http://services.uscellular.com/schema/enterprise/resources/subscriberresourcemanagement/v1_0/messages">
+   <soapenv:Header>
+      <typ:MessageHeader>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQ=</typ:uscSecurityToken>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:transactionId>1</typ:transactionId>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <soapenv:Body>
+      <mes:getAvailableResources_Request>
+         <mes:customerID>960176833</mes:customerID>
+         <mes:city>Salina</mes:city>
+         <mes:state>KS</mes:state>
+         <mes:numberOfResources>1</mes:numberOfResources>
+      </mes:getAvailableResources_Request>
+   </soapenv:Body>
+</soapenv:Envelope>
+
+---------------- Response --------------------------
+Response Headers: X-Global-Transaction-ID : 2506000083
+Date : Mon, 20 Nov 2017 21:56:56 GMT
+Transfer-Encoding : chunked
+X-Backside-Transport : OK OK
+#status# : HTTP/1.1 200 OK
+Content-Type : text/xml
+Connection : Keep-Alive
+X-Powered-By : Servlet/2.5 JSP/2.1
+Server : Apache
+
+
+<soapenv:Envelope xmlns:soapenv="http://schemas.xmlsoap.org/soap/envelope/">
+   <soapenv:Header>
+      <typ:MessageHeader xmlns:typ="http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types">
+         <typ:activityStatus>SUCCESS</typ:activityStatus>
+         <typ:activityName>SubscriberResourceManagement</typ:activityName>
+         <typ:msgName>getAvailableResources</typ:msgName>
+         <typ:msgType>RESPONSE</typ:msgType>
+         <typ:msgID>4681157062810306504--6b3f8c8e.15fa1d93b62.-7f77-0f89a5d0-7325-4dca-8210-617bed456828</typ:msgID>
+         <typ:clientId>dpUser</typ:clientId>
+         <typ:uscSecurityToken>cGFzc3dvcmQgcmVtb3ZlZA==</typ:uscSecurityToken>
+         <typ:priority>4</typ:priority>
+         <typ:correlationId>90005</typ:correlationId>
+         <typ:requestTimestamp>2017-11-20T15:56:56.775-06:00</typ:requestTimestamp>
+         <typ:responseTimestamp>2017-11-20T15:57:02.769-06:00</typ:responseTimestamp>
+         <typ:transactionId>1</typ:transactionId>
+         <typ:sequenceNumber>1</typ:sequenceNumber>
+         <typ:functionalIdentifiers/>
+      </typ:MessageHeader>
+   </soapenv:Header>
+   <S:Body xmlns:S="http://schemas.xmlsoap.org/soap/envelope/">
+      <mes:getAvailableResources_Response xmlns:mes="http://services.uscellular.com/schema/enterprise/resources/subscriberresourcemanagement/v1_0/messages">
+         <mes:resources>
+            <typ:resourceType xmlns:typ="http://services.uscellular.com/schema/enterprise/resources/subscriberresourcemanagement/v1_0/types">MDN</typ:resourceType>
+            <typ:resourceValue xmlns:typ="http://services.uscellular.com/schema/enterprise/resources/subscriberresourcemanagement/v1_0/types">7858190996</typ:resourceValue>
+         </mes:resources>
+      </mes:getAvailableResources_Response>
+   </S:Body>
+</soapenv:Envelope>
