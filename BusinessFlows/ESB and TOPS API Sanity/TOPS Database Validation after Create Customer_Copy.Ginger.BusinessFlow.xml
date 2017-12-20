@@ -1,282 +1,179 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Ginger Repository Item created with version: 2.5.0.0-->
+<?xml version="1.0" encoding="utf-8"?>
+<!--Ginger Repository Item created with version: 2.6.0.0-->
 <GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="39480" EnableActivitiesVariablesDependenciesControl="False" Guid="1d827c92-d901-4da5-a658-9281d1acba7c" LastUpdate="11/10/2017 11:05:20 PM" LastUpdateBy="uchou001" Name="07 TOPS ABP Database Validation" ParentGuid="a616d04e-2bba-4313-b417-fc0f1975ebb5" Source="Ginger" Version="120">
-<Activities>
-<GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="TOPS ABP Data Base Validation" AutomationStatus="Development" Created="11/9/2017 9:58:10 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="6d59ec49-cd94-4750-b62d-ef5f1fe9494a" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
-<Acts>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check PUB LOG Table" EnableRetryMechanism="True" ExternalID="" Guid="02fff668-d305-4873-be9d-f297b648a006" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="58e5e976-8cdb-47c5-a56d-70cbf786917f" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" Value="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:37:54 PM" CreatedBy="uchou001" Guid="897fd877-b402-4029-bd9d-692e75d5f1d9" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="PUB_LOG_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check SUB LOG Table" EnableRetryMechanism="True" ExternalID="" Guid="d6a437da-0c0e-43ae-8b73-0710f0cef87d" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="e658fc13-bbb5-403d-81cb-9fbed6293794" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" Value="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:37:54 PM" CreatedBy="uchou001" Guid="897fd877-b402-4029-bd9d-692e75d5f1d9" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="SUB_LOG_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check SUB ERRS Table" EnableRetryMechanism="True" ExternalID="" Guid="a989c27d-3d11-4788-a14b-f4975c7fba18" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="507f40ce-4201-43ed-b836-604d78525ed4" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" Value="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:41:18 PM" CreatedBy="uchou001" Guid="f1150321-6bbc-45cc-8e00-2e184baac84f" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the AAM transactions for an order" EnableRetryMechanism="True" ExternalID="" Guid="d3053b32-63d6-46cc-8fe5-ad6c1a91c033" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="82e36e05-e304-430b-8f3e-6aeeb2ef7931" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" Value="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:41:18 PM" CreatedBy="uchou001" Guid="f1150321-6bbc-45cc-8e00-2e184baac84f" LastUpdate="1/1/0001 12:00:00 AM" mExpected="1" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the Subscriber  status in CM" EnableRetryMechanism="True" ExternalID="" Guid="facb7ffc-88b6-441a-8a4c-554ba638642b" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="b5a7301a-886f-44d5-8fd0-ad84042d0e04" Platform="NA" RetryMechanismInterval="2" SQL="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" Value="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:03:26 PM" CreatedBy="uchou001" Guid="27b9828b-f536-4b52-84fb-9079643df4ff" LastUpdate="1/1/0001 12:00:00 AM" mExpected="A" Param="SUB_STATUS" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the financial account created successfully in CM" EnableRetryMechanism="True" ExternalID="" Guid="11b5978b-4b9b-478e-8f2d-84aba0286c05" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="3bbd5a69-c194-49d8-b0c5-96489c509eed" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" Value="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:04:49 PM" CreatedBy="uchou001" Guid="7c0480cf-00f3-4c5a-bf79-e3634f13fb1d" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;=2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the financial account in ABP" EnableRetryMechanism="True" ExternalID="" Guid="1e5c3c11-f8fc-4c50-8c57-aded4f839cae" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="70d101ae-c481-4cfb-b9c9-f9308d938ca1" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" Value="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:04:49 PM" CreatedBy="uchou001" Guid="7c0480cf-00f3-4c5a-bf79-e3634f13fb1d" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;= 2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the customer creation is successfully in Invoicing" EnableRetryMechanism="True" ExternalID="" Guid="c68fefbd-751a-49b4-8ac2-a1bf8b033c94" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="a331c4d6-cb86-4d6c-b1da-096a89aa6b59" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" Value="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:45:22 PM" CreatedBy="uchou001" Guid="446de3ed-32d7-423c-a11a-68eeebdc586a" LastUpdate="1/1/0001 12:00:00 AM" mExpected="1" Param="CUST_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the paychannel created successfully in Invoicing" EnableRetryMechanism="True" ExternalID="" Guid="3febca51-5399-4ddf-b27a-dbdaa526f342" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="63950784-0f43-4f8d-8d2c-df8f493d4c15" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" Value="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:10:38 PM" CreatedBy="uchou001" Guid="a3e4fa7e-147d-45ce-bf46-68bb119aa331" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;= 2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-<GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the subscriber data in ABP" EnableRetryMechanism="True" ExternalID="" Guid="a66e26b6-80f9-4ec1-a8d3-db69d2b6b605" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="a8356604-c5b8-49c2-8f0e-08bd2e474de5" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
-<DSOutputConfigParams>
-</DSOutputConfigParams>
-
-<FlowControls>
-</FlowControls>
-
-<InputValues>
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" Value="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
-<GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</InputValues>
-
-<ReturnValues>
-<GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:10:38 PM" CreatedBy="uchou001" Guid="a3e4fa7e-147d-45ce-bf46-68bb119aa331" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &gt;= 1" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
-</ReturnValues>
-
-<Tags>
-</Tags>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Actions.ActDBValidation>
-</Acts>
-
-<Tags>
-</Tags>
-
-<Variables>
-</Variables>
-
-<VariablesDependencies>
-</VariablesDependencies>
-</GingerCore.Activity>
-</Activities>
-
-<ActivitiesGroups>
-</ActivitiesGroups>
-
-<Tags>
-</Tags>
-
-<TargetApplications>
-<GingerCore.Platforms.TargetApplication AppName="MyWebServicesApp" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Guid="a47a4fc2-929a-4719-8502-d3466297317b" LastExecutingAgentName="MyWebServicesApp" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
-</TargetApplications>
-
-<Variables>
-</Variables>
+  <Activities>
+    <GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="TOPS ABP Data Base Validation" AutomationStatus="Development" Created="11/9/2017 9:58:10 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="6d59ec49-cd94-4750-b62d-ef5f1fe9494a" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
+      <Acts>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check PUB LOG Table" EnableRetryMechanism="True" ExternalID="" Guid="02fff668-d305-4873-be9d-f297b648a006" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="58e5e976-8cdb-47c5-a56d-70cbf786917f" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" Value="select count(*) as PUB_LOG_COUNT from trb1_pub_log where entity_id = '{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:37:54 PM" CreatedBy="uchou001" Guid="897fd877-b402-4029-bd9d-692e75d5f1d9" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="PUB_LOG_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check SUB LOG Table" EnableRetryMechanism="True" ExternalID="" Guid="d6a437da-0c0e-43ae-8b73-0710f0cef87d" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="e658fc13-bbb5-403d-81cb-9fbed6293794" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" Value="select count(*) as SUB_LOG_COUNT from trb1_sub_log where entity_id = '{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:37:54 PM" CreatedBy="uchou001" Guid="897fd877-b402-4029-bd9d-692e75d5f1d9" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="SUB_LOG_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="TRB_Validation_Check SUB ERRS Table" EnableRetryMechanism="True" ExternalID="" Guid="a989c27d-3d11-4788-a14b-f4975c7fba18" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="507f40ce-4201-43ed-b836-604d78525ed4" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" Value="select count(*) from trb1_sub_errs where entity_id = '{Var Name=glbl_CustomerID}' and sub_appl_id &lt;&gt;' 3009' and actv_code_id &lt;&gt; '539'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:41:18 PM" CreatedBy="uchou001" Guid="f1150321-6bbc-45cc-8e00-2e184baac84f" LastUpdate="1/1/0001 12:00:00 AM" mExpected="0" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the AAM transactions for an order" EnableRetryMechanism="True" ExternalID="" Guid="d3053b32-63d6-46cc-8fe5-ad6c1a91c033" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="60" ParentGuid="82e36e05-e304-430b-8f3e-6aeeb2ef7931" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" Value="select Count(*) from pv9_resp_repos where free_text = 'orderId={Var Name=bfr_OrderActionID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:41:18 PM" CreatedBy="uchou001" Guid="f1150321-6bbc-45cc-8e00-2e184baac84f" LastUpdate="1/1/0001 12:00:00 AM" mExpected="1" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the Subscriber  status in CM" EnableRetryMechanism="True" ExternalID="" Guid="facb7ffc-88b6-441a-8a4c-554ba638642b" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="b5a7301a-886f-44d5-8fd0-ad84042d0e04" Platform="NA" RetryMechanismInterval="2" SQL="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" Value="select SUB_STATUS from subscriber where customer_id = '{Var Name=glbl_CustomerID}'  order by sys_creation_date  desc" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:03:26 PM" CreatedBy="uchou001" Guid="27b9828b-f536-4b52-84fb-9079643df4ff" LastUpdate="1/1/0001 12:00:00 AM" mExpected="A" Param="SUB_STATUS" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the financial account created successfully in CM" EnableRetryMechanism="True" ExternalID="" Guid="11b5978b-4b9b-478e-8f2d-84aba0286c05" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="3bbd5a69-c194-49d8-b0c5-96489c509eed" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" Value="select Count(*) from CSM_ACCOUNT where customer_id = '{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:04:49 PM" CreatedBy="uchou001" Guid="7c0480cf-00f3-4c5a-bf79-e3634f13fb1d" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;=2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the financial account in ABP" EnableRetryMechanism="True" ExternalID="" Guid="1e5c3c11-f8fc-4c50-8c57-aded4f839cae" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="10" ParentGuid="70d101ae-c481-4cfb-b9c9-f9308d938ca1" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" Value="select Count(*) from CSM_PAY_CHANNEL where BEN in  (select ben from CSM_BEN, CSM_ACCOUNT where CSM_BEN.BAN = CSM_ACCOUNT.BAN and CSM_ACCOUNT.CUSTOMER_ID='{Var Name=glbl_CustomerID}')" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:04:49 PM" CreatedBy="uchou001" Guid="7c0480cf-00f3-4c5a-bf79-e3634f13fb1d" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;= 2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the customer creation is successfully in Invoicing" EnableRetryMechanism="True" ExternalID="" Guid="c68fefbd-751a-49b4-8ac2-a1bf8b033c94" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="a331c4d6-cb86-4d6c-b1da-096a89aa6b59" Platform="NA" RetryMechanismInterval="2" SQL="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" Value="select count(*) as CUST_COUNT from bl1_customer where Customer_Id ='{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/8/2017 10:45:22 PM" CreatedBy="uchou001" Guid="446de3ed-32d7-423c-a11a-68eeebdc586a" LastUpdate="1/1/0001 12:00:00 AM" mExpected="1" Param="CUST_COUNT" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the paychannel created successfully in Invoicing" EnableRetryMechanism="True" ExternalID="" Guid="3febca51-5399-4ddf-b27a-dbdaa526f342" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="63950784-0f43-4f8d-8d2c-df8f493d4c15" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" Value="select Count(*) from BL1_PAY_CHANNEL where customer_no = '{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:10:38 PM" CreatedBy="uchou001" Guid="a3e4fa7e-147d-45ce-bf46-68bb119aa331" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &lt;= 2" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+        <GingerCore.Actions.ActDBValidation Active="True" AppName="EnvDetails" ConfigOutputDS="False" Created="11/8/2017 10:37:17 PM" CreatedBy="uchou001" DBName="ABP_DB" DBValidationType="FreeSQL" Description="Verifying the subscriber data in ABP" EnableRetryMechanism="True" ExternalID="" Guid="a66e26b6-80f9-4ec1-a8d3-db69d2b6b605" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="5" ParentGuid="a8356604-c5b8-49c2-8f0e-08bd2e474de5" Platform="NA" RetryMechanismInterval="2" SQL="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+          <DSOutputConfigParams></DSOutputConfigParams>
+          <FlowControls></FlowControls>
+          <InputValues>
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="c6bc0cbe-932e-401a-89cb-5b1910c4a9f1" LastUpdate="1/1/0001 12:00:00 AM" Param="SQL" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" Value="select Count(*) from APE1_SUBSCR_DATA where customer_id =  '{Var Name=glbl_CustomerID}'" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="1916b86c-69e1-44fb-be04-9c49d6c82fd4" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryTypeRadioButton" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="FreeSQL" Value="FreeSQL" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="88b446ea-84dc-4a9d-ba70-a21bec419cce" LastUpdate="1/1/0001 12:00:00 AM" Param="QueryFile" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="d858bf15-2a8d-49e0-b7de-343ee481d4a7" LastUpdate="1/1/0001 12:00:00 AM" Param="ImportFile" ParentGuid="00000000-0000-0000-0000-000000000000" StoreToVariable="True" Value="True" Version="0" />
+            <GingerCore.Actions.ActInputValue Created="11/8/2017 10:37:21 PM" CreatedBy="uchou001" Guid="10174115-eec5-41db-9296-29be82f55390" LastUpdate="1/1/0001 12:00:00 AM" Param="CommitDB" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+          </InputValues>
+          <ReturnValues>
+            <GingerCore.Actions.ActReturnValue Active="True" Created="11/9/2017 10:10:38 PM" CreatedBy="uchou001" Guid="a3e4fa7e-147d-45ce-bf46-68bb119aa331" LastUpdate="1/1/0001 12:00:00 AM" mExpected="{Actual} &gt;= 1" Param="COUNT(*)" ParentGuid="00000000-0000-0000-0000-000000000000" StoreTo="None" StoreToValue="" Version="0" />
+          </ReturnValues>
+          <Tags></Tags>
+          <VariablesDependencies></VariablesDependencies>
+        </GingerCore.Actions.ActDBValidation>
+      </Acts>
+      <Tags></Tags>
+      <Variables></Variables>
+      <VariablesDependencies></VariablesDependencies>
+    </GingerCore.Activity>
+  </Activities>
+  <ActivitiesGroups></ActivitiesGroups>
+  <Tags></Tags>
+  <TargetApplications>
+    <GingerCore.Platforms.TargetApplication AppName="MyWebServicesApp" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Guid="a47a4fc2-929a-4719-8502-d3466297317b" LastExecutingAgentName="MyWebServicesApp" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Version="0" />
+  </TargetApplications>
+  <Variables></Variables>
 </GingerCore.BusinessFlow>

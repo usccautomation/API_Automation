@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Ginger Repository Item created with version: 2.6.0.0-->
-<GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="45944" EnableActivitiesVariablesDependenciesControl="False" Guid="3da59de6-f7e5-4324-a128-5aafe2bc60e6" LastUpdate="12/20/2017 8:53:28 PM" LastUpdateBy="uchou001" Name="01 Create Customer" ParentGuid="76741299-0c63-4c1f-88f7-ce4d311ac6f0" Source="Ginger" Version="123">
+<!--Ginger Repository Item created with version: 2.5.0.0-->
+<GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="45944" EnableActivitiesVariablesDependenciesControl="False" Guid="3da59de6-f7e5-4324-a128-5aafe2bc60e6" LastUpdate="11/10/2017 8:32:42 PM" LastUpdateBy="uchou001" Name="01 Create Customer" ParentGuid="76741299-0c63-4c1f-88f7-ce4d311ac6f0" Source="Ginger" Version="120">
 <Activities>
 <GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Create Individual Regular Customer" AutomationStatus="Development" Created="10/11/2017 5:59:58 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="61719134-28b5-4372-8c61-ce794e0c949e" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
 <Acts>

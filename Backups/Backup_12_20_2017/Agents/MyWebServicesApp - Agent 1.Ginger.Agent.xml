@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<!--Ginger Repository Item created with version: 2.6.0.0-->
-<GingerCore.Agent Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" DriverType="WebServices" Guid="03ca4372-8a14-4b13-9187-6be4c2954bd5" LastUpdate="12/20/2017 8:42:10 PM" LastUpdateBy="uchou001" Name="MyWebServicesApp" ParentGuid="00000000-0000-0000-0000-000000000000" Port="0" Remote="False" Version="5">
+<!--Ginger Repository Item created with version: 2.5.0.0-->
+<GingerCore.Agent Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" DriverType="WebServices" Guid="03ca4372-8a14-4b13-9187-6be4c2954bd5" LastUpdate="10/6/2017 6:02:37 PM" LastUpdateBy="uchou001" Name="MyWebServicesApp" ParentGuid="00000000-0000-0000-0000-000000000000" Port="0" Remote="False" Version="4">
 <DriverConfiguration>
 <GingerCore.DriverConfigParam Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Description="Show Driver Window On Launch" Guid="1ee90ecd-634e-4124-b552-0e3966d10606" LastUpdate="1/1/0001 12:00:00 AM" Parameter="ShowDriverWindowOnLaunch" ParentGuid="00000000-0000-0000-0000-000000000000" Value="false" Version="0" />
 <GingerCore.DriverConfigParam Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Description="Save Request XML" Guid="4795c68f-a405-4a9b-85b2-8f1cda484f60" LastUpdate="1/1/0001 12:00:00 AM" Parameter="SaveRequestXML" ParentGuid="00000000-0000-0000-0000-000000000000" Value="true" Version="0" />
