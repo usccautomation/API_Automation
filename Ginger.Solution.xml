@@ -1,125 +1,168 @@
-<?xml version="1.0" encoding="utf-8"?>
+﻿<?xml version="1.0" encoding="utf-8"?>
 <!--Ginger Repository Item created with version: 2.6.0.0-->
-<Ginger.Environments.Solution AlmType="QC" Created="10/4/2017 10:28:20 PM" CreatedBy="uchou001" Guid="441ffcdb-cf75-4938-b5a5-7f4ed44a2bf1" LastBusinessFlowFileName="C:\SVN\GingerSolutions\API_Sanity\\BusinessFlows\ESB and TOPS API Sanity\TOPS Database Validation after Create Customer_Copy.Ginger.BusinessFlow.xml" LastUpdate="11/10/2017 11:05:19 PM" LastUpdateBy="uchou001" Name="API Automation" ParentGuid="00000000-0000-0000-0000-000000000000" ShowIndicationkForLockedItems="False" Version="15">
-  <ApplicationPlatforms>
-    <GingerCore.Platforms.ApplicationPlatform AppName="MyWebServicesApp" CoreGUID="00000000-0000-0000-0000-000000000000" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Guid="eeeca014-2685-4ee3-b1d2-be21d4f73a92" GUID="00000000-0000-0000-0000-000000000000" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" Version="0" />
-  </ApplicationPlatforms>
-  <ExecutionLoggerConfigurationSetList>
-    <Ginger.Reports.ExecutionLoggerConfiguration Created="10/11/2017 5:33:05 PM" CreatedBy="uchou001" ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults\" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="e35c02bd-bbd0-4413-a8a2-8e7011522a8c" IsSelected="True" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" Version="0" />
-  </ExecutionLoggerConfigurationSetList>
-  <ExternalItemsFields></ExternalItemsFields>
-  <HTMLReportsConfigurationSetList>
-    <Ginger.Reports.HTMLReportsConfiguration Created="10/11/2017 5:33:05 PM" CreatedBy="uchou001" Guid="6451a66e-7f25-42d0-92a9-1eed3be001e8" HTMLReportsAutomaticProdIsEnabled="False" HTMLReportsFolder="~\HTMLReports\" HTMLReportTemplatesSeq="0" IsSelected="True" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" Version="0" />
-  </HTMLReportsConfigurationSetList>
-  <Tags></Tags>
-  <Variables>
-    <GingerCore.Variables.VariableRandomString Created="10/11/2017 6:01:00 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="c81c2623-dedf-446a-9b6c-86489551bcde" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="F_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="SPBJOS" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomString>
-    <GingerCore.Variables.VariableRandomString Created="10/11/2017 6:02:32 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="2470d55c-b7d8-43b0-9363-35ed1f2613ee" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="L_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="CWKHPWPIFW" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:03:10 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="b528c95f-5b7d-4813-ac64-0f38e97187e0" InitialStringValue="1950-10-09" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="DOB" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="1950-10-09" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableRandomNumber Created="10/11/2017 6:04:04 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="05ac857b-f358-4aec-81df-b7dddddaf79d" Interval="2" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="999999999" Min="999990000" Name="SSN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="999991610" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomNumber>
-    <GingerCore.Variables.VariableRandomString Created="10/11/2017 6:05:47 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="a81cf373-1e75-4bbc-b0ac-c5a29ff35b00" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="DL_NUMBER" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="JNUYKS" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomString>
-    <GingerCore.Variables.VariableList Created="10/11/2017 6:08:56 PM" CreatedBy="uchou001" CurrentValueIndex="0" CycleCount="0" DiffrentFromOrigin="False" Guid="d84d72ff-7bf9-4872-abb7-b56ecb035407" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ISSUE_STATE" ParentGuid="00000000-0000-0000-0000-000000000000" RandomOrder="False" SetAsInputValue="True" SetAsOutputValue="False" Value="WI" ValueList="WI&#xD;&#xA;IL&#xD;&#xA;NC&#xD;&#xA;CA&#xD;&#xA;NY&#xD;&#xA;WA" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableList>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:09:45 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="b0a5da5b-7473-4643-9ef8-97373527b0c1" InitialStringValue="2020-02-10" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="EXP_DATE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="2020-02-10" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableRandomNumber Created="10/11/2017 6:10:11 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="6c0bcc5c-a666-4470-837e-b71b466fe8a5" Interval="0" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="9999" Min="1000" Name="PIN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="1057" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomNumber>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:10:52 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="8f242699-c35c-40a0-8bf9-84b439c2015c" InitialStringValue="314 Princess St" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_LINE1" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="314 Princess St" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:14:26 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7ba43887-0ed1-4d23-9d7b-ae889de1f664" InitialStringValue="Wilmington" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_CITY" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="Wilmington" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:14:51 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="4a4aa721-fc10-48c8-9e11-cdf23e227a74" InitialStringValue="NC" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_STATE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="NC" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:15:06 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="47790976-a38e-481b-88ed-2c5517fc39cf" InitialStringValue="28401" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_ZIP" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="28401" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:28:50 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="75f7f1fe-fdfd-4953-923d-e5ec9727af91" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ENV_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:35:32 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="504ce884-6b13-44da-b398-4845e1e85532" InitialStringValue="960049428" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_CustomerID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960049428" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:35:54 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="29e5aeb9-6f2a-484b-993c-0cc183e243af" InitialStringValue="960049753" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_BAID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960049753" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 6:36:10 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7d55f77c-1469-4e90-b716-4029896c683c" InitialStringValue="960049782" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_FAID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960049782" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:05:59 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="3385ea20-26d3-44df-97b4-e655c5a45ce0" InitialStringValue="5" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="LINES_TO_ADD" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="5" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 5:40:13 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7ee13961-0a11-4dfa-b946-7cc64265287d" InitialStringValue="NC" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_State" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="NC" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 5:40:33 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="262c56fa-d04b-46a9-a2a7-dce476373265" InitialStringValue="KINSTON" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_City" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="KINSTON" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 5:41:09 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="ea3a847f-2ddb-4696-b014-69338ededccc" InitialStringValue="8154945445" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_Value" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="8154945445" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 5:42:04 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="2a062987-fb0b-444a-9eae-2142e22585bd" InitialStringValue="89015808000001042068" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_UICC" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="89015808000001042068" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableRandomNumber Created="11/9/2017 5:42:26 PM" CreatedBy="uchou001" CycleCount="0" Description="This MEID range is for iPhone 6 (Item ID: 180847)" DiffrentFromOrigin="False" Guid="90aa073a-86ca-4629-b19d-3c3e0b44d4e6" Interval="1" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="21710219999" Min="21710210200" Name="glbl_MEID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="21710214830" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableRandomNumber>
-    <GingerCore.Variables.VariableString Created="10/6/2017 6:42:58 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="19b1f255-4fc1-4a19-8ffd-3da760fc6ab5" InitialStringValue="SUCCESS" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_Status" ParentGuid="53bc7185-90a9-41ac-a09f-6d9c3277ea9c" SetAsInputValue="True" SetAsOutputValue="True" Value="SUCCESS" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/6/2017 6:43:26 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="e47284ab-f794-4086-8e8c-1a3fe2e21602" InitialStringValue="CustomerManagement" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_ActivityName" ParentGuid="40dace40-7384-4264-8d3f-27bf5a2a6e15" SetAsInputValue="True" SetAsOutputValue="True" Value="CustomerManagement" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/6/2017 6:43:47 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="ff0f69ee-48e4-4944-a65e-e789fe614714" InitialStringValue="AUTOMOCRF DRSANITYMOCRF" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CName" ParentGuid="55c68d7a-cf16-4e2c-849a-01f469c04261" SetAsInputValue="True" SetAsOutputValue="True" Value="AUTOMOCRF DRSANITYMOCRF" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="10/11/2017 5:42:28 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="a19e481f-6a93-4c3f-a2fb-5ec9704d90da" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_MDN" ParentGuid="b723d265-0c69-4b01-a54f-8499010e37f5" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:02:02 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="8a96756a-ce73-409a-80f4-118551086c43" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_STATUS" ParentGuid="a9abb120-d688-4cef-bd9c-5aa4ff408ac5" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:02:35 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="ae338dcb-7ae6-431c-9e44-7d75b3096aa2" InitialStringValue="A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_CLASS" ParentGuid="5a3933df-edef-4b0d-89d0-892975d14aec" SetAsInputValue="True" SetAsOutputValue="True" Value="A" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:02:52 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="066ac7be-78c2-418e-a9a4-c048114d4611" InitialStringValue="10000000581C" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_AUTH" ParentGuid="2f3df58f-e1bb-4fc3-a421-f52c6239961c" SetAsInputValue="True" SetAsOutputValue="True" Value="10000000581C" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:03:08 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="38ccff04-f73e-43d9-815f-f459b7783318" InitialStringValue="5" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_APPROVED_LINES" ParentGuid="79b26b1d-23d9-4557-a015-cc49ce948720" SetAsInputValue="True" SetAsOutputValue="True" Value="5" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:03:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="a7ad4098-9632-45e9-8052-bf7000b1aab6" InitialStringValue="C" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_DECISION" ParentGuid="fa76c2ae-d36f-4c03-b1ec-5de26b30e4a7" SetAsInputValue="True" SetAsOutputValue="True" Value="C" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:20:03 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="3917d71b-d740-47da-a606-0de467c500ee" InitialStringValue="&lt;soapenv:Envelope xmlns:soapenv=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;   &lt;soapenv:Header&gt;&#xD;&#xA;      &lt;typ:MessageHeader xmlns:typ=http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types&gt;&#xD;&#xA;         &lt;typ:activityStatus&gt;SUCCESS&lt;/typ:activityStatus&gt;&#xD;&#xA;         &lt;typ:activityName&gt;CreditEvaluation&lt;/typ:activityName&gt;&#xD;&#xA;         &lt;typ:msgName&gt;getCreditInfo&lt;/typ:msgName&gt;&#xD;&#xA;         &lt;typ:msgType&gt;RESPONSE&lt;/typ:msgType&gt;&#xD;&#xA;         &lt;typ:msgID&gt;1094709043509614667-71bf9bac.15f3646704d.-47e4-5013b0d9-9d4a-4e55-af3a-4ddfeb82e3cd&lt;/typ:msgID&gt;&#xD;&#xA;         &lt;typ:clientId&gt;dpUser&lt;/typ:clientId&gt;&#xD;&#xA;         &lt;typ:uscSecurityToken&gt;cGFzc3dvcmQgcmVtb3ZlZA==&lt;/typ:uscSecurityToken&gt;&#xD;&#xA;         &lt;typ:priority&gt;4&lt;/typ:priority&gt;&#xD;&#xA;         &lt;typ:correlationId&gt;90005&lt;/typ:correlationId&gt;&#xD;&#xA;         &lt;typ:requestTimestamp&gt;2017-11-08T14:31:44.569-06:00&lt;/typ:requestTimestamp&gt;&#xD;&#xA;         &lt;typ:responseTimestamp&gt;2017-11-08T14:31:50.149-06:00&lt;/typ:responseTimestamp&gt;&#xD;&#xA;         &lt;typ:transactionId&gt;1&lt;/typ:transactionId&gt;&#xD;&#xA;         &lt;typ:sequenceNumber&gt;1&lt;/typ:sequenceNumber&gt;&#xD;&#xA;         &lt;typ:functionalIdentifiers/&gt;&#xD;&#xA;      &lt;/typ:MessageHeader&gt;&#xD;&#xA;   &lt;/soapenv:Header&gt;&#xD;&#xA;   &lt;S:Body xmlns:S=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;      &lt;mes:getCreditInfo_Response xmlns:mes=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages&gt;&#xD;&#xA;         &lt;mes:creditInfo&gt;&#xD;&#xA;            &lt;typ:depositAmount xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;0.0&lt;/typ:depositAmount&gt;&#xD;&#xA;            &lt;typ:creditClass xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;A&lt;/typ:creditClass&gt;&#xD;&#xA;            &lt;typ:validityStartDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:validityStartDate&gt;&#xD;&#xA;            &lt;typ:validityEndDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2020-01-03&lt;/typ:validityEndDate&gt;&#xD;&#xA;            &lt;typ:createDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:createDate&gt;&#xD;&#xA;            &lt;typ:creditApplicationNo xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;10000000581C&lt;/typ:creditApplicationNo&gt;&#xD;&#xA;            &lt;typ:maxNumOfApprovedUnits xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:maxNumOfApprovedUnits&gt;&#xD;&#xA;            &lt;typ:numOfLinesApprovedToAdd xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:numOfLinesApprovedToAdd&gt;&#xD;&#xA;            &lt;typ:decisionStatus xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;C&lt;/typ:decisionStatus&gt;&#xD;&#xA;         &lt;/mes:creditInfo&gt;&#xD;&#xA;      &lt;/mes:getCreditInfo_Response&gt;&#xD;&#xA;   &lt;/S:Body&gt;&#xD;&#xA;&lt;/soapenv:Envelope&gt;&#xD;&#xA;" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="xml_Response" ParentGuid="97c53fc3-dee6-464f-8dd1-f9e7a9eb2fb5" SetAsInputValue="True" SetAsOutputValue="True" Value="&lt;soapenv:Envelope xmlns:soapenv=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;   &lt;soapenv:Header&gt;&#xD;&#xA;      &lt;typ:MessageHeader xmlns:typ=http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types&gt;&#xD;&#xA;         &lt;typ:activityStatus&gt;SUCCESS&lt;/typ:activityStatus&gt;&#xD;&#xA;         &lt;typ:activityName&gt;CreditEvaluation&lt;/typ:activityName&gt;&#xD;&#xA;         &lt;typ:msgName&gt;getCreditInfo&lt;/typ:msgName&gt;&#xD;&#xA;         &lt;typ:msgType&gt;RESPONSE&lt;/typ:msgType&gt;&#xD;&#xA;         &lt;typ:msgID&gt;1094709043509614667-71bf9bac.15f3646704d.-47e4-5013b0d9-9d4a-4e55-af3a-4ddfeb82e3cd&lt;/typ:msgID&gt;&#xD;&#xA;         &lt;typ:clientId&gt;dpUser&lt;/typ:clientId&gt;&#xD;&#xA;         &lt;typ:uscSecurityToken&gt;cGFzc3dvcmQgcmVtb3ZlZA==&lt;/typ:uscSecurityToken&gt;&#xD;&#xA;         &lt;typ:priority&gt;4&lt;/typ:priority&gt;&#xD;&#xA;         &lt;typ:correlationId&gt;90005&lt;/typ:correlationId&gt;&#xD;&#xA;         &lt;typ:requestTimestamp&gt;2017-11-08T14:31:44.569-06:00&lt;/typ:requestTimestamp&gt;&#xD;&#xA;         &lt;typ:responseTimestamp&gt;2017-11-08T14:31:50.149-06:00&lt;/typ:responseTimestamp&gt;&#xD;&#xA;         &lt;typ:transactionId&gt;1&lt;/typ:transactionId&gt;&#xD;&#xA;         &lt;typ:sequenceNumber&gt;1&lt;/typ:sequenceNumber&gt;&#xD;&#xA;         &lt;typ:functionalIdentifiers/&gt;&#xD;&#xA;      &lt;/typ:MessageHeader&gt;&#xD;&#xA;   &lt;/soapenv:Header&gt;&#xD;&#xA;   &lt;S:Body xmlns:S=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;      &lt;mes:getCreditInfo_Response xmlns:mes=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages&gt;&#xD;&#xA;         &lt;mes:creditInfo&gt;&#xD;&#xA;            &lt;typ:depositAmount xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;0.0&lt;/typ:depositAmount&gt;&#xD;&#xA;            &lt;typ:creditClass xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;A&lt;/typ:creditClass&gt;&#xD;&#xA;            &lt;typ:validityStartDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:validityStartDate&gt;&#xD;&#xA;            &lt;typ:validityEndDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2020-01-03&lt;/typ:validityEndDate&gt;&#xD;&#xA;            &lt;typ:createDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:createDate&gt;&#xD;&#xA;            &lt;typ:creditApplicationNo xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;10000000581C&lt;/typ:creditApplicationNo&gt;&#xD;&#xA;            &lt;typ:maxNumOfApprovedUnits xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:maxNumOfApprovedUnits&gt;&#xD;&#xA;            &lt;typ:numOfLinesApprovedToAdd xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:numOfLinesApprovedToAdd&gt;&#xD;&#xA;            &lt;typ:decisionStatus xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;C&lt;/typ:decisionStatus&gt;&#xD;&#xA;         &lt;/mes:creditInfo&gt;&#xD;&#xA;      &lt;/mes:getCreditInfo_Response&gt;&#xD;&#xA;   &lt;/S:Body&gt;&#xD;&#xA;&lt;/soapenv:Envelope&gt;&#xD;&#xA;" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/8/2017 8:44:21 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="8076a55f-1cf0-4797-8dc1-767b46fc6559" InitialStringValue="2017-11-08T14:47:07.396-06:00" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_DECISION_TS" ParentGuid="37d8d51d-5941-4cf6-a348-4c5821317865" SetAsInputValue="True" SetAsOutputValue="True" Value="2017-11-08T14:47:07.396-06:00" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 8:33:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="e47368e0-62ff-4834-ba44-2a98d02bb169" InitialStringValue="593668876A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_OrderID" ParentGuid="c18bf2e5-4ba9-479e-ab64-3dd01d72932e" SetAsInputValue="True" SetAsOutputValue="True" Value="593668876A" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 8:33:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="cb0b346d-6e63-4f57-9d8d-9def32ccecf0" InitialStringValue="593668876A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_OrderActionID" ParentGuid="b243524b-ea0d-4cfe-852a-a1548dff4834" SetAsInputValue="True" SetAsOutputValue="True" Value="593668876A" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-    <GingerCore.Variables.VariableString Created="11/9/2017 10:21:36 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="3810beca-b5db-4963-a1ab-7fb36bfc616f" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_ESN_Status" ParentGuid="f8ec8b4d-7c18-4c1c-a922-a8fb88f7b03d" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
-      <Tags></Tags>
-    </GingerCore.Variables.VariableString>
-  </Variables>
+<Ginger.Environments.Solution AlmType="QC" Created="10/4/2017 10:28:20 PM" CreatedBy="uchou001" Guid="441ffcdb-cf75-4938-b5a5-7f4ed44a2bf1" LastBusinessFlowFileName="C:\Jenkins\workspace\Testing\Automation\Test_Ginger_GitHub\API_Automation.git\\BusinessFlows\Business Flow 1.Ginger.BusinessFlow.xml" LastUpdate="12/27/2017 9:02:34 PM" LastUpdateBy="uchou001" Name="API Automation" ParentGuid="00000000-0000-0000-0000-000000000000" ShowIndicationkForLockedItems="False" Version="16">
+<ApplicationPlatforms>
+<GingerCore.Platforms.ApplicationPlatform AppName="MyWebServicesApp" CoreGUID="00000000-0000-0000-0000-000000000000" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Guid="eeeca014-2685-4ee3-b1d2-be21d4f73a92" GUID="00000000-0000-0000-0000-000000000000" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Platform="WebServices" Version="0" />
+</ApplicationPlatforms>
+
+<ExecutionLoggerConfigurationSetList>
+<Ginger.Reports.ExecutionLoggerConfiguration Created="10/11/2017 5:33:05 PM" CreatedBy="uchou001" ExecutionLoggerConfigurationExecResultsFolder="~\ExecutionResults\" ExecutionLoggerConfigurationIsEnabled="True" ExecutionLoggerConfigurationMaximalFolderSize="250" Guid="e35c02bd-bbd0-4413-a8a2-8e7011522a8c" IsSelected="True" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" Version="0" />
+</ExecutionLoggerConfigurationSetList>
+
+<ExternalItemsFields>
+</ExternalItemsFields>
+
+<HTMLReportsConfigurationSetList>
+<Ginger.Reports.HTMLReportsConfiguration Created="10/11/2017 5:33:05 PM" CreatedBy="uchou001" Guid="6451a66e-7f25-42d0-92a9-1eed3be001e8" HTMLReportsAutomaticProdIsEnabled="False" HTMLReportsFolder="~\HTMLReports\" HTMLReportTemplatesSeq="0" IsSelected="True" LastUpdate="1/1/0001 12:00:00 AM" ParentGuid="00000000-0000-0000-0000-000000000000" Seq="0" Version="0" />
+</HTMLReportsConfigurationSetList>
+
+<Tags>
+</Tags>
+
+<Variables>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:14:26 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7ba43887-0ed1-4d23-9d7b-ae889de1f664" InitialStringValue="Wilmington" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_CITY" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="Wilmington" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:10:52 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="8f242699-c35c-40a0-8bf9-84b439c2015c" InitialStringValue="314 Princess St" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_LINE1" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="314 Princess St" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:14:51 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="4a4aa721-fc10-48c8-9e11-cdf23e227a74" InitialStringValue="NC" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_STATE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="NC" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:15:06 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="47790976-a38e-481b-88ed-2c5517fc39cf" InitialStringValue="28401" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ADD_ZIP" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="28401" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/6/2017 6:43:26 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="e47284ab-f794-4086-8e8c-1a3fe2e21602" InitialStringValue="CustomerManagement" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_ActivityName" ParentGuid="40dace40-7384-4264-8d3f-27bf5a2a6e15" SetAsInputValue="True" SetAsOutputValue="True" Value="CustomerManagement" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/6/2017 6:43:47 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="ff0f69ee-48e4-4944-a65e-e789fe614714" InitialStringValue="AUTOMOCRF DRSANITYMOCRF" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CName" ParentGuid="55c68d7a-cf16-4e2c-849a-01f469c04261" SetAsInputValue="True" SetAsOutputValue="True" Value="AUTOMOCRF DRSANITYMOCRF" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:03:08 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="38ccff04-f73e-43d9-815f-f459b7783318" InitialStringValue="5" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_APPROVED_LINES" ParentGuid="79b26b1d-23d9-4557-a015-cc49ce948720" SetAsInputValue="True" SetAsOutputValue="True" Value="5" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:02:52 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="066ac7be-78c2-418e-a9a4-c048114d4611" InitialStringValue="10000000581C" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_AUTH" ParentGuid="2f3df58f-e1bb-4fc3-a421-f52c6239961c" SetAsInputValue="True" SetAsOutputValue="True" Value="10000015674C" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:02:35 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="ae338dcb-7ae6-431c-9e44-7d75b3096aa2" InitialStringValue="A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_CLASS" ParentGuid="5a3933df-edef-4b0d-89d0-892975d14aec" SetAsInputValue="True" SetAsOutputValue="True" Value="A" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:03:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="a7ad4098-9632-45e9-8052-bf7000b1aab6" InitialStringValue="C" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_DECISION" ParentGuid="fa76c2ae-d36f-4c03-b1ec-5de26b30e4a7" SetAsInputValue="True" SetAsOutputValue="True" Value="C" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:02:02 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="8a96756a-ce73-409a-80f4-118551086c43" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_CREDIT_STATUS" ParentGuid="a9abb120-d688-4cef-bd9c-5aa4ff408ac5" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:44:21 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="8076a55f-1cf0-4797-8dc1-767b46fc6559" InitialStringValue="2017-11-08T14:47:07.396-06:00" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_DECISION_TS" ParentGuid="37d8d51d-5941-4cf6-a348-4c5821317865" SetAsInputValue="True" SetAsOutputValue="True" Value="2017-12-27T14:48:10.714-06:00" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 10:21:36 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="3810beca-b5db-4963-a1ab-7fb36bfc616f" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_ESN_Status" ParentGuid="f8ec8b4d-7c18-4c1c-a922-a8fb88f7b03d" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 5:42:28 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="a19e481f-6a93-4c3f-a2fb-5ec9704d90da" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_MDN" ParentGuid="b723d265-0c69-4b01-a54f-8499010e37f5" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 8:33:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="cb0b346d-6e63-4f57-9d8d-9def32ccecf0" InitialStringValue="593668876A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_OrderActionID" ParentGuid="b243524b-ea0d-4cfe-852a-a1548dff4834" SetAsInputValue="True" SetAsOutputValue="True" Value="593668876A" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 8:33:24 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="e47368e0-62ff-4834-ba44-2a98d02bb169" InitialStringValue="593668876A" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_OrderID" ParentGuid="c18bf2e5-4ba9-479e-ab64-3dd01d72932e" SetAsInputValue="True" SetAsOutputValue="True" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/6/2017 6:42:58 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="19b1f255-4fc1-4a19-8ffd-3da760fc6ab5" InitialStringValue="SUCCESS" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="bfr_Status" ParentGuid="53bc7185-90a9-41ac-a09f-6d9c3277ea9c" SetAsInputValue="True" SetAsOutputValue="True" Value="SUCCESS" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableRandomString Created="10/11/2017 6:05:47 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="a81cf373-1e75-4bbc-b0ac-c5a29ff35b00" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="DL_NUMBER" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="RWMCHLVP" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:03:10 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="b528c95f-5b7d-4813-ac64-0f38e97187e0" InitialStringValue="1950-10-09" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="DOB" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="1950-10-09" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:28:50 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="75f7f1fe-fdfd-4953-923d-e5ec9727af91" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ENV_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:09:45 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="b0a5da5b-7473-4643-9ef8-97373527b0c1" InitialStringValue="2020-02-10" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="EXP_DATE" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="2020-02-10" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableRandomString Created="10/11/2017 6:01:00 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="c81c2623-dedf-446a-9b6c-86489551bcde" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="F_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="MNYZFOWY" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:35:54 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="29e5aeb9-6f2a-484b-993c-0cc183e243af" InitialStringValue="960049753" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_BAID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960050258" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:35:32 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="504ce884-6b13-44da-b398-4845e1e85532" InitialStringValue="960049428" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_CustomerID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960051053" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="10/11/2017 6:36:10 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7d55f77c-1469-4e90-b716-4029896c683c" InitialStringValue="960049782" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_FAID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="False" SetAsOutputValue="True" Value="960050287" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 5:40:33 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="262c56fa-d04b-46a9-a2a7-dce476373265" InitialStringValue="KINSTON" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_City" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="ROCKFORD" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 5:40:13 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="7ee13961-0a11-4dfa-b946-7cc64265287d" InitialStringValue="NC" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_State" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="IL" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableString Created="11/9/2017 5:41:09 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="ea3a847f-2ddb-4696-b014-69338ededccc" InitialStringValue="8154945445" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_MDN_Value" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="8159888452" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableRandomNumber Created="11/9/2017 5:42:26 PM" CreatedBy="uchou001" CycleCount="0" Description="This MEID range is for iPhone 6 (Item ID: 180847)" DiffrentFromOrigin="False" Guid="90aa073a-86ca-4629-b19d-3c3e0b44d4e6" Interval="1" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="21710219999" Min="21710210200" Name="glbl_MEID" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="21710217338" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomNumber>
+<GingerCore.Variables.VariableString Created="11/9/2017 5:42:04 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="2a062987-fb0b-444a-9eae-2142e22585bd" InitialStringValue="89015808000001042068" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="glbl_UICC" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="89015809000015262392" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableList Created="10/11/2017 6:08:56 PM" CreatedBy="uchou001" CurrentValueIndex="0" CycleCount="0" DiffrentFromOrigin="False" Guid="d84d72ff-7bf9-4872-abb7-b56ecb035407" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="ISSUE_STATE" ParentGuid="00000000-0000-0000-0000-000000000000" RandomOrder="False" SetAsInputValue="True" SetAsOutputValue="False" Value="WI" ValueList="WI&#xD;&#xA;IL&#xD;&#xA;NC&#xD;&#xA;CA&#xD;&#xA;NY&#xD;&#xA;WA" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableList>
+<GingerCore.Variables.VariableRandomString Created="10/11/2017 6:02:32 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="2470d55c-b7d8-43b0-9363-35ed1f2613ee" IsDigit="False" IsLowerCase="False" IsUpperCase="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="10" Min="5" Name="L_NAME" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="ERBRXMCYYU" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomString>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:05:59 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="3385ea20-26d3-44df-97b4-e655c5a45ce0" InitialStringValue="5" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="LINES_TO_ADD" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="False" Value="5" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+<GingerCore.Variables.VariableRandomNumber Created="10/11/2017 6:10:11 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="6c0bcc5c-a666-4470-837e-b71b466fe8a5" Interval="0" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="9999" Min="1000" Name="PIN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="9770" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomNumber>
+<GingerCore.Variables.VariableRandomNumber Created="10/11/2017 6:04:04 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" Guid="05ac857b-f358-4aec-81df-b7dddddaf79d" Interval="2" IsInteger="True" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Max="999999999" Min="999990000" Name="SSN" ParentGuid="00000000-0000-0000-0000-000000000000" SetAsInputValue="True" SetAsOutputValue="True" Value="999997242" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableRandomNumber>
+<GingerCore.Variables.VariableString Created="11/8/2017 8:20:03 PM" CreatedBy="uchou001" CycleCount="0" DiffrentFromOrigin="False" ExternalID="" Guid="3917d71b-d740-47da-a606-0de467c500ee" InitialStringValue="&lt;soapenv:Envelope xmlns:soapenv=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;   &lt;soapenv:Header&gt;&#xD;&#xA;      &lt;typ:MessageHeader xmlns:typ=http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types&gt;&#xD;&#xA;         &lt;typ:activityStatus&gt;SUCCESS&lt;/typ:activityStatus&gt;&#xD;&#xA;         &lt;typ:activityName&gt;CreditEvaluation&lt;/typ:activityName&gt;&#xD;&#xA;         &lt;typ:msgName&gt;getCreditInfo&lt;/typ:msgName&gt;&#xD;&#xA;         &lt;typ:msgType&gt;RESPONSE&lt;/typ:msgType&gt;&#xD;&#xA;         &lt;typ:msgID&gt;1094709043509614667-71bf9bac.15f3646704d.-47e4-5013b0d9-9d4a-4e55-af3a-4ddfeb82e3cd&lt;/typ:msgID&gt;&#xD;&#xA;         &lt;typ:clientId&gt;dpUser&lt;/typ:clientId&gt;&#xD;&#xA;         &lt;typ:uscSecurityToken&gt;cGFzc3dvcmQgcmVtb3ZlZA==&lt;/typ:uscSecurityToken&gt;&#xD;&#xA;         &lt;typ:priority&gt;4&lt;/typ:priority&gt;&#xD;&#xA;         &lt;typ:correlationId&gt;90005&lt;/typ:correlationId&gt;&#xD;&#xA;         &lt;typ:requestTimestamp&gt;2017-11-08T14:31:44.569-06:00&lt;/typ:requestTimestamp&gt;&#xD;&#xA;         &lt;typ:responseTimestamp&gt;2017-11-08T14:31:50.149-06:00&lt;/typ:responseTimestamp&gt;&#xD;&#xA;         &lt;typ:transactionId&gt;1&lt;/typ:transactionId&gt;&#xD;&#xA;         &lt;typ:sequenceNumber&gt;1&lt;/typ:sequenceNumber&gt;&#xD;&#xA;         &lt;typ:functionalIdentifiers/&gt;&#xD;&#xA;      &lt;/typ:MessageHeader&gt;&#xD;&#xA;   &lt;/soapenv:Header&gt;&#xD;&#xA;   &lt;S:Body xmlns:S=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;      &lt;mes:getCreditInfo_Response xmlns:mes=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages&gt;&#xD;&#xA;         &lt;mes:creditInfo&gt;&#xD;&#xA;            &lt;typ:depositAmount xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;0.0&lt;/typ:depositAmount&gt;&#xD;&#xA;            &lt;typ:creditClass xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;A&lt;/typ:creditClass&gt;&#xD;&#xA;            &lt;typ:validityStartDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:validityStartDate&gt;&#xD;&#xA;            &lt;typ:validityEndDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2020-01-03&lt;/typ:validityEndDate&gt;&#xD;&#xA;            &lt;typ:createDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2019-10-05&lt;/typ:createDate&gt;&#xD;&#xA;            &lt;typ:creditApplicationNo xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;10000000581C&lt;/typ:creditApplicationNo&gt;&#xD;&#xA;            &lt;typ:maxNumOfApprovedUnits xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:maxNumOfApprovedUnits&gt;&#xD;&#xA;            &lt;typ:numOfLinesApprovedToAdd xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:numOfLinesApprovedToAdd&gt;&#xD;&#xA;            &lt;typ:decisionStatus xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;C&lt;/typ:decisionStatus&gt;&#xD;&#xA;         &lt;/mes:creditInfo&gt;&#xD;&#xA;      &lt;/mes:getCreditInfo_Response&gt;&#xD;&#xA;   &lt;/S:Body&gt;&#xD;&#xA;&lt;/soapenv:Envelope&gt;&#xD;&#xA;" LastUpdate="1/1/0001 12:00:00 AM" MappedOutputType="None" Name="xml_Response" ParentGuid="97c53fc3-dee6-464f-8dd1-f9e7a9eb2fb5" SetAsInputValue="True" SetAsOutputValue="True" Value="&lt;soapenv:Envelope xmlns:soapenv=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;   &lt;soapenv:Header&gt;&#xD;&#xA;      &lt;typ:MessageHeader xmlns:typ=http://services.uscellular.com/schema/enterprise/messageheader/v1_0/types&gt;&#xD;&#xA;         &lt;typ:activityStatus&gt;SUCCESS&lt;/typ:activityStatus&gt;&#xD;&#xA;         &lt;typ:activityName&gt;CreditEvaluation&lt;/typ:activityName&gt;&#xD;&#xA;         &lt;typ:msgName&gt;getCreditInfo&lt;/typ:msgName&gt;&#xD;&#xA;         &lt;typ:msgType&gt;RESPONSE&lt;/typ:msgType&gt;&#xD;&#xA;         &lt;typ:msgID&gt;3669753379466900584-22b0371f.160700b4abe.-6986-01ea4f5c-1b8c-4947-9840-46aa9d55332c&lt;/typ:msgID&gt;&#xD;&#xA;         &lt;typ:clientId&gt;dpUser&lt;/typ:clientId&gt;&#xD;&#xA;         &lt;typ:uscSecurityToken&gt;cGFzc3dvcmQgcmVtb3ZlZA==&lt;/typ:uscSecurityToken&gt;&#xD;&#xA;         &lt;typ:priority&gt;4&lt;/typ:priority&gt;&#xD;&#xA;         &lt;typ:correlationId&gt;90005&lt;/typ:correlationId&gt;&#xD;&#xA;         &lt;typ:requestTimestamp&gt;2017-12-27T14:48:08.254-06:00&lt;/typ:requestTimestamp&gt;&#xD;&#xA;         &lt;typ:responseTimestamp&gt;2017-12-27T14:48:10.714-06:00&lt;/typ:responseTimestamp&gt;&#xD;&#xA;         &lt;typ:transactionId&gt;1&lt;/typ:transactionId&gt;&#xD;&#xA;         &lt;typ:sequenceNumber&gt;1&lt;/typ:sequenceNumber&gt;&#xD;&#xA;         &lt;typ:functionalIdentifiers/&gt;&#xD;&#xA;      &lt;/typ:MessageHeader&gt;&#xD;&#xA;   &lt;/soapenv:Header&gt;&#xD;&#xA;   &lt;S:Body xmlns:S=http://schemas.xmlsoap.org/soap/envelope/&gt;&#xD;&#xA;      &lt;mes:getCreditInfo_Response xmlns:mes=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/messages&gt;&#xD;&#xA;         &lt;mes:creditInfo&gt;&#xD;&#xA;            &lt;typ:depositAmount xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;0.0&lt;/typ:depositAmount&gt;&#xD;&#xA;            &lt;typ:creditClass xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;A&lt;/typ:creditClass&gt;&#xD;&#xA;            &lt;typ:validityStartDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2018-01-10&lt;/typ:validityStartDate&gt;&#xD;&#xA;            &lt;typ:validityEndDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2018-04-10&lt;/typ:validityEndDate&gt;&#xD;&#xA;            &lt;typ:createDate xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;2018-01-10&lt;/typ:createDate&gt;&#xD;&#xA;            &lt;typ:creditApplicationNo xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;10000015674C&lt;/typ:creditApplicationNo&gt;&#xD;&#xA;            &lt;typ:maxNumOfApprovedUnits xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:maxNumOfApprovedUnits&gt;&#xD;&#xA;            &lt;typ:numOfLinesApprovedToAdd xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;5&lt;/typ:numOfLinesApprovedToAdd&gt;&#xD;&#xA;            &lt;typ:decisionStatus xmlns:typ=http://services.uscellular.com/schema/enterprise/credit/creditevaluation/v2_0/types&gt;C&lt;/typ:decisionStatus&gt;&#xD;&#xA;         &lt;/mes:creditInfo&gt;&#xD;&#xA;      &lt;/mes:getCreditInfo_Response&gt;&#xD;&#xA;   &lt;/S:Body&gt;&#xD;&#xA;&lt;/soapenv:Envelope&gt;&#xD;&#xA;" VarValChanged="False" Version="0">
+<Tags>
+</Tags>
+</GingerCore.Variables.VariableString>
+</Variables>
 </Ginger.Environments.Solution>

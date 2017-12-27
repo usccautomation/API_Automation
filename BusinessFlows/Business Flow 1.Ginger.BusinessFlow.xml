@@ -1,6 +1,6 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <!--Ginger Repository Item created with version: 2.6.0.0-->
-<GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="396408" EnableActivitiesVariablesDependenciesControl="False" Guid="506ae5f6-cd14-465a-a49c-0d329b03b7cd" LastUpdate="12/20/2017 8:17:14 PM" LastUpdateBy="uchou001" Name="API Sanity (ESB and TOPS)" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Version="121">
+<GingerCore.BusinessFlow Active="False" Created="10/4/2017 10:29:13 PM" CreatedBy="uchou001" Elapsed="396408" EnableActivitiesVariablesDependenciesControl="False" Guid="506ae5f6-cd14-465a-a49c-0d329b03b7cd" LastUpdate="12/27/2017 8:59:37 PM" LastUpdateBy="uchou001" Name="API Sanity (ESB and TOPS)" ParentGuid="00000000-0000-0000-0000-000000000000" Source="Ginger" Version="123">
 <Activities>
 <GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Create Individual Regular Customer" AutomationStatus="Development" Created="10/11/2017 5:59:58 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="61719134-28b5-4372-8c61-ce794e0c949e" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
 <Acts>
@@ -745,7 +745,7 @@
 </GingerCore.Activity>
 <GingerCore.Activity ActionRunOption="StopActionsRunOnFailure" Active="True" ActivityName="Postpaid Provide with LTE Device" AutomationStatus="Development" Created="11/9/2017 8:25:26 PM" CreatedBy="uchou001" EnableActionsVariablesDependenciesControl="False" Guid="fcb8f91c-44a9-4bb1-a286-4e7ab1b87ff3" LastUpdate="1/1/0001 12:00:00 AM" Mandatory="False" ParentGuid="00000000-0000-0000-0000-000000000000" PercentAutomated="100%" TargetApplication="MyWebServicesApp" Version="0">
 <Acts>
-<GingerCore.Actions.ActSoapUI Active="True" ConfigOutputDS="False" Created="11/9/2017 8:29:45 PM" CreatedBy="uchou001" Description="Provide Flow with LTE Device and National 450 Offer" EnableRetryMechanism="False" ExternalID="" Guid="3b50fc75-8735-4f02-b8aa-13ef5c2bd59b" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="de970d72-72bd-4784-b24d-ed03714e1046" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
+<GingerCore.Actions.ActSoapUI Active="True" ConfigOutputDS="False" Created="11/9/2017 8:29:45 PM" CreatedBy="uchou001" Description="Provide Flow (National 450)" EnableRetryMechanism="False" ExternalID="" Guid="3b50fc75-8735-4f02-b8aa-13ef5c2bd59b" LastUpdate="1/1/0001 12:00:00 AM" LocateBy="NA" MaxNumberOfRetries="2" ParentGuid="de970d72-72bd-4784-b24d-ed03714e1046" Platform="NA" RetryMechanismInterval="5" StatusConverter="None" SupportSimulation="False" TakeScreenShot="False" Version="0" Wait="0" WindowsToCapture="OnlyActiveWindow">
 <DSOutputConfigParams>
 </DSOutputConfigParams>
 
