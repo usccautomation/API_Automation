@@ -1,1 +1,0 @@
-{"Seq":1,"GUID":"fcb8f91c-44a9-4bb1-a286-4e7ab1b87ff3","ActivityName":"Postpaid Provide with LTE Device","StartTimeStamp":"2017-11-17T22:29:27.0438616Z","EndTimeStamp":"2017-11-17T22:29:51.7693339Z","Elapsed":24721,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

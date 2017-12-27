@@ -1,1 +1,0 @@
-{"Seq":1,"GUID":"3c38fa6a-1540-436c-b3bb-a64c5ab1da2c","ActivityName":"TOPS Database Validation after Customer Creation","StartTimeStamp":"2017-11-17T22:28:37.5119089Z","EndTimeStamp":"2017-11-17T22:28:58.975055Z","Elapsed":21459,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

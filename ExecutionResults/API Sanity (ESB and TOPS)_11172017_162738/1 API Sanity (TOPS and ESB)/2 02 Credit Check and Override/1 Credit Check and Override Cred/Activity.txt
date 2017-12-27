@@ -1,1 +1,0 @@
-{"Seq":1,"GUID":"c221dcdd-fdb5-49c7-8eda-e6801e3661aa","ActivityName":"Credit Check and Override Credit Check (if Required)","StartTimeStamp":"2017-11-17T22:28:08.4390019Z","EndTimeStamp":"2017-11-17T22:28:37.5009078Z","Elapsed":29057,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

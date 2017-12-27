@@ -1,1 +1,0 @@
-{"Seq":1,"GUID":"13f3801b-eac2-4610-a3d5-650ec52de81a","ActivityName":"TOPS OMS Data Base Validation","StartTimeStamp":"2017-11-20T21:58:45.7612572Z","EndTimeStamp":"2017-11-20T21:59:38.3552572Z","Elapsed":52592,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}

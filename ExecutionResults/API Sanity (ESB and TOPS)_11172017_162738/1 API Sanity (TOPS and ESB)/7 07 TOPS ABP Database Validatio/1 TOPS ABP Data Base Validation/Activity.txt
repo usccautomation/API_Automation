@@ -1,1 +1,0 @@
-{"Seq":1,"GUID":"6d59ec49-cd94-4750-b62d-ef5f1fe9494a","ActivityName":"TOPS ABP Data Base Validation","StartTimeStamp":"2017-11-17T22:30:44.3575922Z","EndTimeStamp":"2017-11-17T22:32:55.8267378Z","Elapsed":131454,"RunStatus":"Failed","VariablesBeforeExec":[],"VariablesAfterExec":[]}
